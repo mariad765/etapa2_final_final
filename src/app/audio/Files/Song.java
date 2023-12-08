@@ -1,5 +1,6 @@
 package app.audio.Files;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -7,12 +8,19 @@ import java.util.List;
 
 @Getter
 public final class Song extends AudioFile {
+
     private final String album;
+
     private final ArrayList<String> tags;
+
     private final String lyrics;
+
     private final String genre;
+
     private final Integer releaseYear;
+
     private final String artist;
+
     private Integer likes;
 
     public Song(String name, Integer duration, String album, ArrayList<String> tags, String lyrics,

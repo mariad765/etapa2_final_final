@@ -5,6 +5,7 @@ import app.audio.Files.AudioFile;
 import app.audio.LibraryEntry;
 import app.utils.Enums;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +13,14 @@ import java.util.List;
 public class Player {
     private Enums.RepeatMode repeatMode;
     private boolean shuffle;
+    @Setter
     private boolean paused;
     private PlayerSource source;
     @Getter
     private String type;
+    @Setter
+    @Getter
+    private Boolean userIsOn;
 
     private ArrayList<PodcastBookmark> bookmarks = new ArrayList<>();
 
@@ -23,6 +28,30 @@ public class Player {
     public Player() {
         this.repeatMode = Enums.RepeatMode.NO_REPEAT;
         this.paused = true;
+        this.userIsOn = true;
+    }
+
+    public static PlayerSource createSource(String type, LibraryEntry entry,
+                                            List<PodcastBookmark> bookmarks) {
+        if ("song".equals(type)) {
+            return new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
+        } else if ("playlist".equals(type)) {
+            return new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
+        } else if ("podcast".equals(type)) {
+            return createPodcastSource((AudioCollection) entry, bookmarks);
+        }
+
+        return null;
+    }
+
+    private static PlayerSource createPodcastSource(AudioCollection collection,
+                                                    List<PodcastBookmark> bookmarks) {
+        for (PodcastBookmark bookmark : bookmarks) {
+            if (bookmark.getName().equals(collection.getName())) {
+                return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection, bookmark);
+            }
+        }
+        return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection);
     }
 
     public void stop() {
@@ -38,31 +67,12 @@ public class Player {
 
     private void bookmarkPodcast() {
         if (source != null && source.getAudioFile() != null) {
-            PodcastBookmark currentBookmark = new PodcastBookmark(source.getAudioCollection().getName(), source.getIndex(), source.getDuration());
+            PodcastBookmark currentBookmark =
+                    new PodcastBookmark(source.getAudioCollection().getName(), source.getIndex(),
+                            source.getDuration());
             bookmarks.removeIf(bookmark -> bookmark.getName().equals(currentBookmark.getName()));
             bookmarks.add(currentBookmark);
         }
-    }
-
-    public static PlayerSource createSource(String type, LibraryEntry entry, List<PodcastBookmark> bookmarks) {
-        if ("song".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
-        } else if ("playlist".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
-        } else if ("podcast".equals(type)) {
-            return createPodcastSource((AudioCollection) entry, bookmarks);
-        }
-
-        return null;
-    }
-
-    private static PlayerSource createPodcastSource(AudioCollection collection, List<PodcastBookmark> bookmarks) {
-        for (PodcastBookmark bookmark : bookmarks) {
-            if (bookmark.getName().equals(collection.getName())) {
-                return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection, bookmark);
-            }
-        }
-        return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection);
     }
 
     public void setSource(LibraryEntry entry, String type) {
@@ -81,7 +91,7 @@ public class Player {
         paused = !paused;
     }
 
-    public void shuffle (Integer seed) {
+    public void shuffle(Integer seed) {
         if (seed != null) {
             source.generateShuffleOrder(seed);
         }
@@ -117,7 +127,11 @@ public class Player {
     }
 
     public void simulatePlayer(int time) {
+
+
+
         if (!paused) {
+
             while (time >= source.getDuration()) {
                 time -= source.getDuration();
                 next();

@@ -3,10 +3,12 @@ package app.searchBar;
 
 import app.Admin;
 import app.audio.LibraryEntry;
+import app.user.Artist;
 import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static app.searchBar.FilterUtils.*;
 import static app.searchBar.FilterUtils.filterByFollowers;
@@ -85,6 +87,7 @@ public class SearchBar {
 
                 break;
             case "podcast":
+
                 entries = new ArrayList<>(Admin.getPodcasts());
 
                 if (filters.getName() != null) {
@@ -93,6 +96,14 @@ public class SearchBar {
 
                 if (filters.getOwner() != null) {
                     entries = filterByOwner(entries, filters.getOwner());
+                }
+                break;
+
+            //added case artist
+            case "artist":
+                entries = new ArrayList<>(Admin.getArtistsManually());
+                if (filters.getName() != null) {
+                    entries = filterByName(entries, filters.getName());
                 }
 
                 break;

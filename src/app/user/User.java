@@ -1,5 +1,6 @@
 package app.user;
 
+import app.Admin;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.PlaylistOutput;
@@ -10,13 +11,19 @@ import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
+import app.strategy.HomePage;
+import app.strategy.UserPage;
 import app.utils.Enums;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class User extends LibraryEntry {
+    @Getter
+    private final Player player;
+    private final SearchBar searchBar;
     @Getter
     private String username;
     @Getter
@@ -29,11 +36,16 @@ public class User {
     private ArrayList<Song> likedSongs;
     @Getter
     private ArrayList<Playlist> followedPlaylists;
-    private final Player player;
-    private final SearchBar searchBar;
     private boolean lastSearched;
+    @Getter
+    @Setter
+    private Boolean connectionStatus;
+    @Getter
+    @Setter
+    private UserPage userPage;
 
     public User(String username, int age, String city) {
+        super(username);
         this.username = username;
         this.age = age;
         this.city = city;
@@ -43,6 +55,18 @@ public class User {
         player = new Player();
         searchBar = new SearchBar(username);
         lastSearched = false;
+        this.connectionStatus = true;
+        // the following will need to be changed to the actual top 5 songs and playlists
+        this.userPage = new HomePage(Admin.getTop5SongsForUser(getLikedSongs()), Admin.getTop5PlaylistsForUser(getFollowedPlaylists()));
+    }
+
+    void setUserPage(UserPage userPage) {
+        this.userPage = userPage;
+    }
+
+    public String displayPage() {
+
+        return userPage.displayPage();
     }
 
     public ArrayList<String> search(Filters filters, String type) {
@@ -69,6 +93,13 @@ public class User {
 
         if (selected == null)
             return "The selected ID is too high.";
+        //check if the item is an artist without using instanceof
+        if (selected.getClass().equals(Artist.class)) {
+            Artist artist = (Artist) selected;
+            setUserPage(artist.getArtistPage()); //set the user page to the artist page
+            return "Successfully selected "+(selected.getName()+"'s page.");
+        }
+
 
         return "Successfully selected %s.".formatted(selected.getName());
     }
@@ -77,7 +108,8 @@ public class User {
         if (searchBar.getLastSelected() == null)
             return "Please select a source before attempting to load.";
 
-        if (!searchBar.getLastSearchType().equals("song") && ((AudioCollection)searchBar.getLastSelected()).getNumberOfTracks() == 0) {
+        if (!searchBar.getLastSearchType()
+                .equals("song") && ((AudioCollection) searchBar.getLastSelected()).getNumberOfTracks() == 0) {
             return "You can't load an empty audio collection!";
         }
 
@@ -108,7 +140,7 @@ public class User {
         Enums.RepeatMode repeatMode = player.repeat();
         String repeatStatus = "";
 
-        switch(repeatMode) {
+        switch (repeatMode) {
             case NO_REPEAT -> repeatStatus = "no repeat";
             case REPEAT_ONCE -> repeatStatus = "repeat once";
             case REPEAT_ALL -> repeatStatus = "repeat all";
@@ -158,6 +190,9 @@ public class User {
     }
 
     public String like() {
+        if (!getConnectionStatus()) {
+            return getUsername() + " is offline.";
+        }
         if (player.getCurrentAudioFile() == null)
             return "Please load a source before liking or unliking.";
 
@@ -187,7 +222,8 @@ public class User {
         if (player.getCurrentAudioFile() == null)
             return "Please load a source before skipping to the next track.";
 
-        return "Skipped to next track successfully. The current track is %s.".formatted(player.getCurrentAudioFile().getName());
+        return "Skipped to next track successfully. The current track is %s.".formatted(
+                player.getCurrentAudioFile().getName());
     }
 
     public String prev() {
@@ -196,7 +232,8 @@ public class User {
 
         player.prev();
 
-        return "Returned to previous track successfully. The current track is %s.".formatted(player.getCurrentAudioFile().getName());
+        return "Returned to previous track successfully. The current track is %s.".formatted(
+                player.getCurrentAudioFile().getName());
     }
 
     public String createPlaylist(String name, int timestamp) {
@@ -220,12 +257,12 @@ public class User {
 
         Playlist playlist = playlists.get(Id - 1);
 
-        if (playlist.containsSong((Song)player.getCurrentAudioFile())) {
-            playlist.removeSong((Song)player.getCurrentAudioFile());
+        if (playlist.containsSong((Song) player.getCurrentAudioFile())) {
+            playlist.removeSong((Song) player.getCurrentAudioFile());
             return "Successfully removed from playlist.";
         }
 
-        playlist.addSong((Song)player.getCurrentAudioFile());
+        playlist.addSong((Song) player.getCurrentAudioFile());
         return "Successfully added to playlist.";
     }
 
@@ -262,7 +299,7 @@ public class User {
         if (!type.equals("playlist"))
             return "The selected source is not a playlist.";
 
-        Playlist playlist = (Playlist)selection;
+        Playlist playlist = (Playlist) selection;
 
         if (playlist.getOwner().equals(username))
             return "You cannot follow or unfollow your own playlist.";
@@ -318,6 +355,37 @@ public class User {
     }
 
     public void simulateTime(int time) {
-        player.simulatePlayer(time);
+        if (getConnectionStatus()) {
+            player.simulatePlayer(time);
+        } else {
+            //stats must not be updated
+            return;
+        }
     }
+
+    public String switchConnectionStatus() {
+
+        if (getConnectionStatus()) {
+            setConnectionStatus(false);
+            getPlayer().setUserIsOn(false);
+
+        } else {
+            setConnectionStatus(true);
+            getPlayer().setUserIsOn(true);
+
+
+        }
+
+        return getUsername() + " has changed status successfully.";
+    }
+
+    public String printCurrentPage() {
+        if(!getConnectionStatus()){
+            return getUsername() + " is offline.";
+        }
+        userPage.updatePage(getUsername());
+        return displayPage();
+
+    }
+
 }
