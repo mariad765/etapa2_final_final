@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import fileio.input.CommandInput;
 import fileio.input.LibraryInput;
+import org.checkerframework.checker.units.qual.C;
 
 import java.io.File;
 import java.io.IOException;
@@ -113,6 +114,15 @@ public final class Main {
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
                 case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
                 case "addMerch" -> outputs.add(CommandRunner.addMerchant(command));
+                case "getAllUsers" -> outputs.add(CommandRunner.getAllUsers(command));
+                case "deleteUser" -> outputs.add(CommandRunner.deleteUser(command));
+                case "addPodcast" -> outputs.add(CommandRunner.addPodcast(command));
+                case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
+                case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
+                case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
+                case "changePage" -> outputs.add(CommandRunner.changePage(command));
+                case "removeAlbum" -> outputs.add(CommandRunner.removeAlbum(command));
+                case "getTop5Albums" -> outputs.add(CommandRunner.getTop5Albums(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }
@@ -121,5 +131,6 @@ public final class Main {
         objectWriter.writeValue(new File(filePath2), outputs);
 
         Admin.reset();
+        System.out.println("///////////////////////////////");
     }
 }

@@ -11,7 +11,8 @@ public class HomePage implements UserPage {
     private List<String> likedSongs;
     private List<String> followedPlaylists;
 
-    public HomePage(List<String> likedSongs, List<String> followedPlaylists) {
+
+    public HomePage( List<String> likedSongs, List<String> followedPlaylists) {
 
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
@@ -21,7 +22,7 @@ public class HomePage implements UserPage {
 
     @Override
     public String displayPage() {
-      //  System.out.println(getLikedSongs());
+        //  System.out.println(getLikedSongs());
         String page = "Liked songs:\n\t" + likedSongs + "\n\n" +
                 "Followed playlists:\n\t" + followedPlaylists;
         return page;

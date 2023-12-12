@@ -1,7 +1,9 @@
 package app.user;
 
+import app.Admin;
 import app.audio.Files.Album;
 import app.audio.Files.Song;
+import app.player.PlayerStats;
 import app.strategy.ArtistPage;
 import app.strategy.UserPage;
 import fileio.input.SongInput;
@@ -21,7 +23,7 @@ public class Artist extends User {
     private UserPage artistPage;
 
     public Artist(String username, int age, String city) {
-        super(username, age, city);
+        super(username, age, city, "artist");
         this.albums = new ArrayList<>();
         this.events = new ArrayList<>();
         this.merchs = new ArrayList<>();
@@ -94,5 +96,30 @@ public class Artist extends User {
 
         return getUsername() + " has added new merchandise successfully.";
 
+    }
+
+    public String removeAlbum(String name) {
+
+
+        for (Album album : getAlbums()) {
+            if (album.getName().equals(name)) {
+                // the album can't be deleted if any user has it loaded in their player
+                // check if any user has a song from that albume loaded
+                for (User user : Admin.getUsers()) {
+                    PlayerStats stats = user.getPlayerStats();
+                    // for songs in album check
+                    for (Song song : album.getSongsFull()) {
+                        if (stats.getName().contains(song.getName())) {
+                            return getUsername() + " can't delete this album.";
+                        }
+                    }
+
+                }
+
+                getAlbums().remove(album);
+                return getUsername() + " has removed the album " + name + " successfully.";
+            }
+        }
+        return getUsername() + " doesn't have an album with the name " + name + ".";
     }
 }

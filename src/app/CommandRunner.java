@@ -1,16 +1,21 @@
 package app;
 
 import app.audio.Collections.PlaylistOutput;
+import app.audio.Collections.Podcast;
 import app.audio.Files.Album;
+import app.audio.Files.Episode;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
+import app.user.Announcement;
 import app.user.Artist;
 import app.user.Event;
+import app.user.Host;
 import app.user.Merch;
 import app.user.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
+import fileio.input.EpisodeInput;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -437,10 +442,10 @@ public class CommandRunner {
         objectNode.put("command", command.getCommand());
         objectNode.put("user", command.getUsername());
         objectNode.put("timestamp", command.getTimestamp());
-        String message = Admin.addUser(command.getUsername(), command.getAge(), command.getCity());
+        String message = Admin.addUser(command.getUsername(), command.getAge(), command.getCity(),
+                command.getType());
         User user = Admin.getUser(command.getUsername());
         assert user != null;
-        user.setConnectionStatus(false);
         objectNode.put("message", message);
         return objectNode;
 
@@ -595,4 +600,248 @@ public class CommandRunner {
 
         return objectNode;
     }
+
+    public static ObjectNode getAllUsers(CommandInput command) {
+        List<User> users = Admin.getUsers();
+        if (users == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            return objectNode;
+        }
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(Admin.getAllUsers()));
+        return objectNode;
+    }
+
+    public static ObjectNode deleteUser(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            // message for non-existent user
+            objectNode.put("message", "The username " + command.getUsername() + " doesn't exist.");
+            return objectNode;
+        }
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("message", Admin.deleteUser(user));
+        return objectNode;
+    }
+
+    public static ObjectNode addPodcast(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            // message for non-existent user
+            objectNode.put("message", "The username " + command.getUsername() + " doesn't exist.");
+            return objectNode;
+        }
+        // if artist doesnt already ezxist create it
+        for (Host host : Admin.getHosts()) {
+            if (host.getUsername().equals(user.getUsername())) {
+                ObjectNode objectNode = objectMapper.createObjectNode();
+                objectNode.put("command", command.getCommand());
+                objectNode.put("user", command.getUsername());
+                objectNode.put("timestamp", command.getTimestamp());
+                List<Episode> episodes = new ArrayList<>();
+                for (EpisodeInput episodeInput : command.getEpisodes()) {
+                    episodes.add(new Episode(episodeInput.getName(), episodeInput.getDuration(),
+                            episodeInput.getDescription()));
+                }
+                Podcast podcast = host.createPodcast(command.getName(), command.getDescription(),
+                        episodes);
+                objectNode.put("message", host.addPodcast(podcast));
+                return objectNode;
+            }
+        }
+        // check if user is host
+        if (!user.getType().equals("host")) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            objectNode.put("message", command.getUsername() + " is not a host.");
+            return objectNode;
+        }
+        Host host = new Host(user.getUsername(), user.getAge(), user.getCity(), "host");
+        Admin.addHost(host);
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+        List<Episode> episodes = new ArrayList<>();
+        for (EpisodeInput episodeInput : command.getEpisodes()) {
+            episodes.add(new Episode(episodeInput.getName(), episodeInput.getDuration(),
+                    episodeInput.getDescription()));
+        }
+        Podcast podcast = host.createPodcast(command.getName(), command.getDescription(),
+                episodes);
+        objectNode.put("message", host.addPodcast(podcast));
+
+        return objectNode;
+    }
+
+    public static ObjectNode addAnnouncement(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            // message for non-existent user
+            objectNode.put("message", "The username " + command.getUsername() + " doesn't exist.");
+            return objectNode;
+        }
+        // if artist doesnt already ezxist create it
+        for (Host host : Admin.getHosts()) {
+            if (host.getUsername().equals(user.getUsername())) {
+                ObjectNode objectNode = objectMapper.createObjectNode();
+                objectNode.put("command", command.getCommand());
+                objectNode.put("user", command.getUsername());
+                objectNode.put("timestamp", command.getTimestamp());
+                Announcement a =
+                        host.createAnnouncement(command.getName(), command.getDescription());
+                objectNode.put("message", host.addAnnouncement(a));
+                return objectNode;
+            }
+        }
+        // check if user is host
+        if (!user.getType().equals("host")) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            objectNode.put("message", command.getUsername() + " is not a host.");
+            return objectNode;
+        }
+
+        return null;
+    }
+
+    public static ObjectNode removeAnnouncement(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            // message for non-existent user
+            objectNode.put("message", "The username " + command.getUsername() + " doesn't exist.");
+            return objectNode;
+        }
+        // if artist doesnt already ezxist create it
+        for (Host host : Admin.getHosts()) {
+            if (host.getUsername().equals(user.getUsername())) {
+                ObjectNode objectNode = objectMapper.createObjectNode();
+                objectNode.put("command", command.getCommand());
+                objectNode.put("user", command.getUsername());
+                objectNode.put("timestamp", command.getTimestamp());
+                objectNode.put("message", host.removeAnnouncement(command.getName()));
+                return objectNode;
+            }
+        }
+        // check if user is host
+        if (!user.getType().equals("host")) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            objectNode.put("message", command.getUsername() + " is not a host.");
+            return objectNode;
+        }
+
+        return null;
+    }
+
+    public static ObjectNode showPodcasts(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            return objectNode;
+        }
+        //before adding an host check if artist exists
+        for (Host host : Admin.getHosts()) {
+            if (host.getUsername().equals(user.getUsername())) {
+                return getJsonNodesHost(command, host);
+            }
+        }
+        Host host = new Host(user.getUsername(), user.getAge(), user.getCity(), "host");
+        Admin.addHost(host);
+        return getJsonNodesHost(command, host);
+    }
+
+    private static ObjectNode getJsonNodesHost(CommandInput command, Host host) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+
+        objectNode.put("result", host.showPodcasts());
+        return objectNode;
+    }
+
+    public static ObjectNode changePage(CommandInput command) {
+     // get the user
+        User user = Admin.getUser(command.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+            return objectNode;
+        }
+     // print the output
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("message", user.changePage());
+        return objectNode;
+    }
+
+    public static ObjectNode removeAlbum(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+        if (user == null) {
+            ObjectNode objectNode = objectMapper.createObjectNode();
+
+            return objectNode;
+        }
+        //before adding an artist check if artist exists
+        for (Artist artist : Admin.getArtists()) {
+            if (artist.getUsername().equals(user.getUsername())) {
+                return getJsonNodesArtistRemoveAlbum(command, artist);
+            }
+        }
+        Artist artist = new Artist(user.getUsername(), user.getAge(), user.getCity());
+        Admin.addArtist(artist);
+        return getJsonNodesArtistRemoveAlbum(command, artist);
+    }
+
+    private static ObjectNode getJsonNodesArtistRemoveAlbum(CommandInput command, Artist artist) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("message", artist.removeAlbum(command.getName()));
+        return objectNode;
+    }
+
+    public static ObjectNode getTop5Albums(CommandInput command) {
+        List<String> albums = Admin.getTop5Albums();
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(albums));
+        return objectNode;
+    }
 }
+
+

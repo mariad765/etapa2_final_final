@@ -12,6 +12,7 @@ import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
 import app.strategy.HomePage;
+import app.strategy.LikedContent;
 import app.strategy.UserPage;
 import app.utils.Enums;
 import lombok.Getter;
@@ -42,9 +43,16 @@ public class User extends LibraryEntry {
     private Boolean connectionStatus;
     @Getter
     @Setter
-    private UserPage userPage;
+    private UserPage userPage; //current page
+    @Getter
+    private UserPage userHomePage; //home page
+    @Getter
+    private UserPage userLikedContentPage;
+    @Getter
+    @Setter
+    private String type;
 
-    public User(String username, int age, String city) {
+    public User(String username, int age, String city, String type) {
         super(username);
         this.username = username;
         this.age = age;
@@ -56,8 +64,13 @@ public class User extends LibraryEntry {
         searchBar = new SearchBar(username);
         lastSearched = false;
         this.connectionStatus = true;
+        setType(type);
         // the following will need to be changed to the actual top 5 songs and playlists
-        this.userPage = new HomePage(Admin.getTop5SongsForUser(getLikedSongs()), Admin.getTop5PlaylistsForUser(getFollowedPlaylists()));
+        this.userPage = new HomePage(Admin.getTop5SongsForUser(getLikedSongs()),
+                Admin.getTop5PlaylistsForUser(getFollowedPlaylists()));
+        this.userHomePage = new HomePage(Admin.getTop5SongsForUser(getLikedSongs()),
+                Admin.getTop5PlaylistsForUser(getFollowedPlaylists()));
+        this.userLikedContentPage = new LikedContent(getLikedSongs(), getFollowedPlaylists());
     }
 
     void setUserPage(UserPage userPage) {
@@ -97,7 +110,12 @@ public class User extends LibraryEntry {
         if (selected.getClass().equals(Artist.class)) {
             Artist artist = (Artist) selected;
             setUserPage(artist.getArtistPage()); //set the user page to the artist page
-            return "Successfully selected "+(selected.getName()+"'s page.");
+            return "Successfully selected " + (selected.getName() + "'s page.");
+        }
+        if (selected.getClass().equals(Host.class)) {
+            Host host = (Host) selected;
+            setUserPage(host.getHostPage()); //set the user page to the artist page
+            return "Successfully selected " + (selected.getName() + "'s page.");
         }
 
 
@@ -368,10 +386,14 @@ public class User extends LibraryEntry {
         if (getConnectionStatus()) {
             setConnectionStatus(false);
             getPlayer().setUserIsOn(false);
+            System.out.println(getUsername() + " is offline.");
 
         } else {
+
             setConnectionStatus(true);
             getPlayer().setUserIsOn(true);
+            //show username
+            System.out.println(getUsername() + " is online.");
 
 
         }
@@ -380,7 +402,7 @@ public class User extends LibraryEntry {
     }
 
     public String printCurrentPage() {
-        if(!getConnectionStatus()){
+        if (!getConnectionStatus()) {
             return getUsername() + " is offline.";
         }
         userPage.updatePage(getUsername());
@@ -388,4 +410,18 @@ public class User extends LibraryEntry {
 
     }
 
+    public String changePage() {
+        if (!getConnectionStatus()) {
+            return getUsername() + " is offline.";
+        }
+        if (userPage instanceof HomePage) {
+            setUserPage(userLikedContentPage);
+            return getUsername() + " accessed LikedContent successfully.";
+        }
+        if(userPage instanceof LikedContent){
+            setUserPage(userHomePage);
+            return getUsername() + " accessed Home successfully.";
+        }
+        return getUsername() + " is trying to access a non-existent page.";
+    }
 }
