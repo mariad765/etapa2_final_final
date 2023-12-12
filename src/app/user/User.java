@@ -67,10 +67,11 @@ public class User extends LibraryEntry {
         setType(type);
         // the following will need to be changed to the actual top 5 songs and playlists
         this.userPage = new HomePage(Admin.getTop5SongsForUser(getLikedSongs()),
-                Admin.getTop5PlaylistsForUser(getFollowedPlaylists()));
+                Admin.getTop5PlaylistsForUser(getFollowedPlaylists()), username);
         this.userHomePage = new HomePage(Admin.getTop5SongsForUser(getLikedSongs()),
-                Admin.getTop5PlaylistsForUser(getFollowedPlaylists()));
-        this.userLikedContentPage = new LikedContent(getLikedSongs(), getFollowedPlaylists());
+                Admin.getTop5PlaylistsForUser(getFollowedPlaylists()), username);
+        this.userLikedContentPage =
+                new LikedContent(getLikedSongs(), getFollowedPlaylists(), username);
     }
 
     void setUserPage(UserPage userPage) {
@@ -173,8 +174,13 @@ public class User extends LibraryEntry {
         if (player.getCurrentAudioFile() == null)
             return "Please load a source before using the shuffle function.";
 
-        if (!player.getType().equals("playlist"))
-            return "The loaded source is not a playlist.";
+        if (!player.getType().equals("playlist")) {
+            if (!player.getType().equals("album")) {
+                return "The loaded source is not a playlist or an album.";
+                //return "The loaded source is not a playlist.";
+            }
+        }
+
 
         player.shuffle(seed);
 
@@ -418,7 +424,7 @@ public class User extends LibraryEntry {
             setUserPage(userLikedContentPage);
             return getUsername() + " accessed LikedContent successfully.";
         }
-        if(userPage instanceof LikedContent){
+        if (userPage instanceof LikedContent) {
             setUserPage(userHomePage);
             return getUsername() + " accessed Home successfully.";
         }

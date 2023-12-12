@@ -34,6 +34,8 @@ public class Admin {
     private static int timestamp = 0;
 
     public static void setUsers(List<UserInput> userInputList) {
+        artists = new ArrayList<>();
+        hosts = new ArrayList<>();
         users = new ArrayList<>();
         normalUsers = new ArrayList<>();
         for (UserInput userInput : userInputList) {
@@ -189,9 +191,14 @@ public class Admin {
         }
         User u = new User(username, age, city, type);
         users.add(u);
+        // check if user is host
+        if (type.equals("host")) {
+
+            hosts.add(new Host(username, age, city, type));
+        }
         //check if user is artist
         if (type.equals("artist")) {
-            //a reference to the user is added to the artists list so what changes in that array will be changes here too
+
             artists.add(new Artist(username, age, city));
         }
         //if user is normal
@@ -276,6 +283,31 @@ public class Admin {
 //                }
 //            }
 //        }
+        // check if anyone is listening to the host s podcasts episode
+        if (user.getType().equals("host")) {
+            for (Podcast podcast : podcasts) {
+                for (Episode episode : podcast.getEpisodes()) {
+                    for (User u : users) {
+                        PlayerStats stats = u.getPlayerStats();
+                        if (stats.getName().equals(episode.getName())) {
+                            return user.getUsername() + " can't be deleted.";
+                        }
+                    }
+                }
+            }
+        }
+        // check if any user is on host s page
+        if (user.getType().equals("host")) {
+            for (User u : users) {
+                if (u.getUserPage().userName().equals(user.getUsername()) && !(u.getUserPage()
+                        .equals(user.getUserPage()))) {
+                    return user.getUsername() + " can't be deleted.";
+                }
+            }
+        }
+        // check if any user is on an artists page
+
+
         // check if anyone is listeningto his songs
         if (user.getType().equals("artist")) {
             for (Song song : songs) {
@@ -291,6 +323,15 @@ public class Admin {
 
         // delete user from users list
         users.remove(user);
+        //  check if user is host
+        if (user.getType().equals("host")) {
+            for (Host host : hosts) {
+                if (host.getUsername().equals(user.getUsername())) {
+                    hosts.remove(host);
+                    break;
+                }
+            }
+        }
         // delete user from the specific type list
         if (user.getType().equals("artist")) {
             // extract him from artists list where it is another object not a reference
@@ -336,6 +377,10 @@ public class Admin {
             // also delete them from admin list
             for (Playlist playlist : user.getPlaylists()) {
                 Admin.getPlaylists().remove(playlist);
+            }
+            // if the user follows any playlist, go to that playlist, unfollow it
+            for (Playlist playlist : user.getFollowedPlaylists()) {
+                playlist.decreaseFollowers();
             }
 
 
@@ -383,5 +428,14 @@ public class Admin {
         }
         return topAlbums;
 
+    }
+
+    public static Host getHost(String username) {
+        for (Host host : hosts) {
+            if (host.getUsername().equals(username)) {
+                return host;
+            }
+        }
+        return null;
     }
 }

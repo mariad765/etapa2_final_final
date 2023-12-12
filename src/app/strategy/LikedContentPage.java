@@ -1,14 +1,19 @@
 package app.strategy;
 
+import lombok.Getter;
+
 import java.util.List;
 
 class LikedContentPage implements UserPage {
     private List<String> likedSongsInfo;
     private List<String> followedPlaylistsInfo;
+    @Getter
+    private String userN;
 
-    LikedContentPage(List<String> likedSongsInfo, List<String> followedPlaylistsInfo) {
+    LikedContentPage(List<String> likedSongsInfo, List<String> followedPlaylistsInfo,String userN) {
         this.likedSongsInfo = likedSongsInfo;
         this.followedPlaylistsInfo = followedPlaylistsInfo;
+        this.userN=userN;
     }
 
     @Override
@@ -23,5 +28,10 @@ class LikedContentPage implements UserPage {
     @Override
     public void updatePage(String userName) {
 
+    }
+
+    @Override
+    public String userName() {
+        return getUserN() ;
     }
 }

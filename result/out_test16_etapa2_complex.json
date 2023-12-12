@@ -4891,7 +4891,7 @@
   "command" : "shuffle",
   "user" : "alice22",
   "timestamp" : 5430,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "fwebb",
@@ -4905,23 +4905,23 @@
     "name" : "Rhythm Whisper",
     "remainedTime" : 243,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "alice22",
   "timestamp" : 5436,
-  "message" : "Skipped to next track successfully. The current track is Utopia Voyage."
+  "message" : "Skipped to next track successfully. The current track is Rapture Echo."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 5690,
   "stats" : {
-    "name" : "Rapture Echo",
-    "remainedTime" : 227,
+    "name" : "Pandora Essence",
+    "remainedTime" : 260,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -4990,7 +4990,7 @@
   "command" : "shuffle",
   "user" : "bob35",
   "timestamp" : 5741,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "barmstrong",
@@ -5004,23 +5004,23 @@
     "name" : "Voyage Adventure",
     "remainedTime" : 183,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "bob35",
   "timestamp" : 5747,
-  "message" : "Skipped to next track successfully. The current track is Mystique Pulse."
+  "message" : "Skipped to next track successfully. The current track is Utopia Eclipse."
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 6001,
   "stats" : {
     "name" : "Mystique Pulse",
-    "remainedTime" : 37,
+    "remainedTime" : 258,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5089,7 +5089,7 @@
   "command" : "shuffle",
   "user" : "carol19",
   "timestamp" : 6052,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "john99",
@@ -5103,23 +5103,23 @@
     "name" : "Tranquility Paradox",
     "remainedTime" : 222,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "carol19",
   "timestamp" : 6058,
-  "message" : "Skipped to next track successfully. The current track is Radiance Rapture."
+  "message" : "Skipped to next track successfully. The current track is Adventure Cascade."
 }, {
   "command" : "status",
   "user" : "carol19",
   "timestamp" : 6312,
   "stats" : {
-    "name" : "Mystique Aurora",
-    "remainedTime" : 251,
+    "name" : "Adventure Cascade",
+    "remainedTime" : 6,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5188,7 +5188,7 @@
   "command" : "shuffle",
   "user" : "david27",
   "timestamp" : 6363,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "john99",
@@ -5202,23 +5202,23 @@
     "name" : "Tranquility Paradox",
     "remainedTime" : 222,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "david27",
   "timestamp" : 6369,
-  "message" : "Skipped to next track successfully. The current track is Radiance Rapture."
+  "message" : "Skipped to next track successfully. The current track is Mystique Aurora."
 }, {
   "command" : "status",
   "user" : "david27",
   "timestamp" : 6623,
   "stats" : {
     "name" : "Mystique Aurora",
-    "remainedTime" : 251,
+    "remainedTime" : 3,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5287,7 +5287,7 @@
   "command" : "shuffle",
   "user" : "emily30",
   "timestamp" : 6674,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "jacobdean",
@@ -5301,23 +5301,23 @@
     "name" : "Soul Pandora",
     "remainedTime" : 172,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "emily30",
   "timestamp" : 6680,
-  "message" : "Skipped to next track successfully. The current track is Adventure Infinity."
+  "message" : "Skipped to next track successfully. The current track is Cascade Pulse."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 6934,
   "stats" : {
-    "name" : "Night Ethereal",
-    "remainedTime" : 229,
+    "name" : "Harmony Rapture",
+    "remainedTime" : 205,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5386,7 +5386,7 @@
   "command" : "shuffle",
   "user" : "frank21",
   "timestamp" : 6985,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "jacobdean",
@@ -5400,30 +5400,30 @@
     "name" : "Crescendo Twilight",
     "remainedTime" : 205,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "frank21",
   "timestamp" : 6991,
-  "message" : "Skipped to next track successfully. The current track is Odyssey Reflection."
+  "message" : "Skipped to next track successfully. The current track is Zephyr Enigma."
 }, {
   "command" : "status",
   "user" : "frank21",
   "timestamp" : 7245,
   "stats" : {
-    "name" : "Odyssey Reflection",
-    "remainedTime" : 18,
+    "name" : "",
+    "remainedTime" : 0,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : false
+    "paused" : true
   }
 }, {
   "command" : "like",
   "user" : "frank21",
   "timestamp" : 7246,
-  "message" : "Loaded source is not a song."
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -5485,7 +5485,7 @@
   "command" : "shuffle",
   "user" : "grace25",
   "timestamp" : 7296,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "jsimpson",
@@ -5499,23 +5499,23 @@
     "name" : "Harmony Love",
     "remainedTime" : 272,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "grace25",
   "timestamp" : 7302,
-  "message" : "Skipped to next track successfully. The current track is Harmony Pandora."
+  "message" : "Skipped to next track successfully. The current track is Reflection Utopia."
 }, {
   "command" : "status",
   "user" : "grace25",
   "timestamp" : 7556,
   "stats" : {
     "name" : "Harmony Pandora",
-    "remainedTime" : 23,
+    "remainedTime" : 265,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5584,7 +5584,7 @@
   "command" : "shuffle",
   "user" : "henry26",
   "timestamp" : 7607,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "charlesgarcia",
@@ -5598,23 +5598,23 @@
     "name" : "Serendipity Zephyr",
     "remainedTime" : 195,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "henry26",
   "timestamp" : 7613,
-  "message" : "Skipped to next track successfully. The current track is Bliss Cascade."
+  "message" : "Skipped to next track successfully. The current track is Serenade Essence."
 }, {
   "command" : "status",
   "user" : "henry26",
   "timestamp" : 7867,
   "stats" : {
-    "name" : "Serenade Essence",
-    "remainedTime" : 178,
+    "name" : "Aurora Celestial",
+    "remainedTime" : 158,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5683,7 +5683,7 @@
   "command" : "shuffle",
   "user" : "irene33",
   "timestamp" : 7918,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "mccarthyluis",
@@ -5697,23 +5697,23 @@
     "name" : "Night Aurora",
     "remainedTime" : 250,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "irene33",
   "timestamp" : 7924,
-  "message" : "Skipped to next track successfully. The current track is Sunset Celestial."
+  "message" : "Skipped to next track successfully. The current track is Solitude Dance."
 }, {
   "command" : "status",
   "user" : "irene33",
   "timestamp" : 8178,
   "stats" : {
-    "name" : "Sunset Celestial",
-    "remainedTime" : 34,
+    "name" : "Solitude Dance",
+    "remainedTime" : 32,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
@@ -5782,12 +5782,12 @@
   "command" : "shuffle",
   "user" : "jack29",
   "timestamp" : 8229,
-  "message" : "The loaded source is not a playlist."
+  "message" : "Shuffle function activated successfully."
 }, {
   "command" : "removeAlbum",
   "user" : "matthewporter",
   "timestamp" : 8233,
-  "message" : "matthewporter has removed the album Groovy Autumn successfully."
+  "message" : "matthewporter deleted the album successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -5796,23 +5796,23 @@
     "name" : "Rhythm Whisper",
     "remainedTime" : 243,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {
   "command" : "next",
   "user" : "jack29",
   "timestamp" : 8235,
-  "message" : "Skipped to next track successfully. The current track is Utopia Voyage."
+  "message" : "Skipped to next track successfully. The current track is Rapture Echo."
 }, {
   "command" : "status",
   "user" : "jack29",
   "timestamp" : 8489,
   "stats" : {
-    "name" : "Rapture Echo",
-    "remainedTime" : 227,
+    "name" : "Lullaby Harmonize",
+    "remainedTime" : 179,
     "repeat" : "No Repeat",
-    "shuffle" : false,
+    "shuffle" : true,
     "paused" : false
   }
 }, {

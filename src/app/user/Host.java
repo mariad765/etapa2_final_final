@@ -4,11 +4,13 @@ import app.Admin;
 import app.audio.Collections.Podcast;
 import app.audio.Collections.SimplifiedPodcast;
 import app.audio.Files.Episode;
+import app.player.PlayerStats;
 import app.strategy.HostPage;
 import app.strategy.UserPage;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.common.math.Stats;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -93,5 +95,45 @@ public class Host extends User {
             return objectMapper.valueToTree(simplifiedPodcasts);
 
        // return null;
+    }
+
+    public String removePodcast(String name) {
+        // get the user
+        Host user = Admin.getHost(getUsername());
+        // if podcast doest exist it can't be deleted
+
+
+        // check if any user is listening to an episode from podcast
+        for (Podcast podcast : getPodcasts()) {
+            if (podcast.getName().equals(name)) {
+                assert user != null;
+                PlayerStats stats = user.getPlayerStats();
+                for (Episode episode : podcast.getEpisodes()) {
+                    if(stats.getName().equals(episode.getName())){
+                        return getUsername()+" can't delete this podcast";
+                    }
+                }
+            }
+        }
+        // check if the podcast is in anyone s player
+        for (User user1 : Admin.getUsers()) {
+            PlayerStats stats = user1.getPlayerStats();
+            for (Podcast podcast : getPodcasts()) {
+                for (Episode episode : podcast.getEpisodes()) {
+                    if (stats.getName().equals(episode.getName())) {
+                        return getUsername() + " can't delete this podcast.";
+                    }
+                }
+            }
+        }
+        for (Podcast podcast : getPodcasts()) {
+            if (podcast.getName().equals(name)) {
+                // also remove from admin
+                Admin.getPodcasts().remove(podcast);
+                getPodcasts().remove(podcast);
+                return getUsername() + " deleted the podcast successfully.";
+            }
+        }
+        return getUsername() + " doesn't have a podcast with the given name.";
     }
 }

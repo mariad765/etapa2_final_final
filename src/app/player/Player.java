@@ -103,6 +103,12 @@ public class Player {
                 source.updateShuffleIndex();
             }
         }
+        if(source.getType()== Enums.PlayerSourceType.ALBUM){
+            shuffle = !shuffle;
+            if (shuffle) {
+                source.updateShuffleIndex();
+            }
+        }
     }
 
     public Enums.RepeatMode repeat() {

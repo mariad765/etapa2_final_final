@@ -792,13 +792,13 @@ public class CommandRunner {
     }
 
     public static ObjectNode changePage(CommandInput command) {
-     // get the user
+        // get the user
         User user = Admin.getUser(command.getUsername());
         if (user == null) {
             ObjectNode objectNode = objectMapper.createObjectNode();
             return objectNode;
         }
-     // print the output
+        // print the output
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", command.getCommand());
         objectNode.put("user", command.getUsername());
@@ -810,7 +810,13 @@ public class CommandRunner {
     public static ObjectNode removeAlbum(CommandInput command) {
         User user = Admin.getUser(command.getUsername());
         if (user == null) {
+            //write that user doesnt uxist
             ObjectNode objectNode = objectMapper.createObjectNode();
+            objectNode.put("command", command.getCommand());
+            objectNode.put("user", command.getUsername());
+            objectNode.put("timestamp", command.getTimestamp());
+            objectNode.put("message", "The username " + command.getUsername() + " doesn't exist.");
+
 
             return objectNode;
         }
@@ -840,6 +846,56 @@ public class CommandRunner {
         objectNode.put("command", command.getCommand());
         objectNode.put("timestamp", command.getTimestamp());
         objectNode.put("result", objectMapper.valueToTree(albums));
+        return objectNode;
+    }
+
+    public static ObjectNode removePodcast(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+        if (user == null) {
+            return objectMapper.createObjectNode();
+        }
+        //before adding an host check if hostt exists
+        for (Host host : Admin.getHosts()) {
+            if (host.getUsername().equals(user.getUsername())) {
+                return getJsonNodesHostRemovePodcast(command, host);
+            }
+        }
+        Host host = new Host(user.getUsername(), user.getAge(), user.getCity(), "host");
+        Admin.addHost(host);
+        return getJsonNodesHostRemovePodcast(command, host);
+    }
+
+    private static ObjectNode getJsonNodesHostRemovePodcast(CommandInput command, Host host) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("message", host.removePodcast(command.getName()));
+        return objectNode;
+    }
+
+    public static ObjectNode removeEvent(CommandInput command) {
+        User user = Admin.getUser(command.getUsername());
+        if (user == null) {
+            return objectMapper.createObjectNode();
+        }
+        //before adding an host check if hostt exists
+        for (Artist artist : Admin.getArtists()) {
+            if (artist.getUsername().equals(user.getUsername())) {
+                return getJsonNodesArtistRemoveEvent(command, artist);
+            }
+        }
+        Artist a = new Artist(user.getUsername(), user.getAge(), user.getCity());
+        Admin.addArtist(a);
+        return getJsonNodesArtistRemoveEvent(command, a);
+    }
+
+    private static ObjectNode getJsonNodesArtistRemoveEvent(CommandInput command, Artist artist) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", command.getCommand());
+        objectNode.put("user", command.getUsername());
+        objectNode.put("timestamp", command.getTimestamp());
+        objectNode.put("message", artist.removeEvent(command.getName()));
         return objectNode;
     }
 }

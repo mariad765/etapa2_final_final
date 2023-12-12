@@ -10,12 +10,14 @@ import java.util.List;
 public class HomePage implements UserPage {
     private List<String> likedSongs;
     private List<String> followedPlaylists;
+    private String userN;
 
 
-    public HomePage( List<String> likedSongs, List<String> followedPlaylists) {
+    public HomePage( List<String> likedSongs, List<String> followedPlaylists,String userN) {
 
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
+        this.userN=userN;
 
 
     }
@@ -36,5 +38,10 @@ public class HomePage implements UserPage {
         this.likedSongs = Admin.getTop5SongsForUser(user.getLikedSongs());
         this.followedPlaylists = Admin.getTop5PlaylistsForUser(user.getFollowedPlaylists());
 
+    }
+
+    @Override
+    public String userName() {
+        return getUserN();
     }
 }

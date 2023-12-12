@@ -1,6 +1,7 @@
 package app.user;
 
 import app.Admin;
+import app.audio.Collections.Playlist;
 import app.audio.Files.Album;
 import app.audio.Files.Song;
 import app.player.PlayerStats;
@@ -115,11 +116,37 @@ public class Artist extends User {
                     }
 
                 }
+                // remove the songs from the album from any playlist
+                for (Song song : album.getSongsFull()) {
+                    for (Playlist playlist : Admin.getPlaylists()) {
+                        playlist.getSongs().remove(song);
+                    }
+                }
+                // remove the songs in the album from songs
+                for (Song song : album.getSongsFull()) {
+                    Admin.getSongs().remove(song);
+                }
+                // remove every song from that albume from every users likes songs
+                for (Song song : album.getSongsFull()) {
+                    for (User user : Admin.getUsers()) {
+                        user.getLikedSongs().remove(song);
+                    }
+                }
 
                 getAlbums().remove(album);
-                return getUsername() + " has removed the album " + name + " successfully.";
+                return getUsername() + " deleted the album successfully.";
             }
         }
-        return getUsername() + " doesn't have an album with the name " + name + ".";
+        return getUsername() + " doesn't have an album with the given name.";
+    }
+
+    public String removeEvent(String name) {
+        for (Event event : getEvents()) {
+            if (event.getName().equals(name)) {
+                getEvents().remove(event);
+                return getUsername() + " deleted the event successfully.";
+            }
+        }
+        return getUsername() + " doesn't have an event with the given name.";
     }
 }

@@ -16,7 +16,7 @@ public class HostPage implements UserPage {
     private String hostName;
     private List<Announcement> announcements;
 
-    public HostPage(String hostNmae, List<Podcast> podcasts, List<Announcement> announcements) {
+    public HostPage(String hostName, List<Podcast> podcasts, List<Announcement> announcements) {
         this.podcasts = podcasts;
         this.hostName = hostName;
         this.announcements = announcements;
@@ -59,5 +59,10 @@ public class HostPage implements UserPage {
         }
 
 
+    }
+
+    @Override
+    public String userName() {
+        return getHostName();
     }
 }

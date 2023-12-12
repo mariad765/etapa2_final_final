@@ -30,11 +30,17 @@ public class ArtistPage implements UserPage {
     public String displayPage() {
         StringBuilder pageContent = new StringBuilder();
 
-        pageContent.append("Albums:\n\t[");
-        albums.forEach(album -> pageContent.append(album.getName()).append(", "));
-        pageContent.setLength(pageContent.length() - 2); // Remove the last comma and space
-
-        pageContent.append("]\n\nMerch:\n\t");
+        pageContent.append("Albums:\n\t");
+      //  System.out.println("k");
+        if (albums.isEmpty()) {
+            pageContent.append("[]");
+        } else {
+            pageContent.append("[");
+            albums.forEach(album -> pageContent.append(album.getName()).append(", "));
+            pageContent.setLength(pageContent.length() - 2); // Remove the last comma and space
+            pageContent.append("]");
+        }
+        pageContent.append("\n\nMerch:\n\t");
         if (merchs.isEmpty()) {
             pageContent.append("[]");
         } else {
@@ -74,5 +80,10 @@ public class ArtistPage implements UserPage {
             this.events = artist.getEvents();
         }
 
+    }
+
+    @Override
+    public String userName() {
+        return getArtistName();
     }
 }

@@ -11,10 +11,12 @@ import java.util.List;
 public class LikedContent implements UserPage{
     private List<Song> likedSongs;
     private List<Playlist> followedPlaylists;
+    private String userN;
 
-    public LikedContent(List<Song> likedSongs, List<Playlist> followedPlaylists) {
+    public LikedContent(List<Song> likedSongs, List<Playlist> followedPlaylists,String userN) {
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
+        this.userN = userN;
     }
     @Override
     public String displayPage() {
@@ -50,5 +52,10 @@ public class LikedContent implements UserPage{
         this.likedSongs = user.getLikedSongs();
         this.followedPlaylists = user.getFollowedPlaylists();
 
+    }
+
+    @Override
+    public String userName() {
+        return null;
     }
 }
