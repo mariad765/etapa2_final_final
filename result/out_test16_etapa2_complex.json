@@ -17981,12 +17981,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 11770,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 11770,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -18017,12 +18017,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 11780,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 11780,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -18053,12 +18053,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 11790,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 11790,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -18089,12 +18089,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 11800,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 11800,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -18125,12 +18125,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 11810,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 11810,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -18161,12 +18161,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 11820,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 11820,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -18197,12 +18197,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 11830,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 11830,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -18233,12 +18233,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 11840,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 11840,
-  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -18269,12 +18269,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 11850,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 11850,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -18305,12 +18305,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 11860,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 11860,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -18341,12 +18341,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 11870,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 11870,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -18377,12 +18377,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 11880,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 11880,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -18413,12 +18413,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 11890,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 11890,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -18449,12 +18449,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 11900,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 11900,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -18485,12 +18485,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 11910,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 11910,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -18521,12 +18521,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 11920,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 11920,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -18557,12 +18557,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 11930,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 11930,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -18593,12 +18593,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 11940,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 11940,
-  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -18629,12 +18629,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 11950,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 11950,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -18665,12 +18665,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 11960,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 11960,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn, Dynamic Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -18701,12 +18701,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 11970,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 11970,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -18737,12 +18737,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 11980,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 11980,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -18773,12 +18773,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 11990,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 11990,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -18809,12 +18809,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12000,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12000,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -18845,12 +18845,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12010,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12010,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -18881,12 +18881,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12020,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12020,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -18917,12 +18917,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12030,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12030,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -18953,12 +18953,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12040,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12040,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -18989,12 +18989,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12050,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12050,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -19025,12 +19025,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12060,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12060,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -19061,12 +19061,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12070,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12070,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -19097,12 +19097,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12080,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12080,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -19133,12 +19133,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12090,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12090,
-  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood, Alone View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -19169,12 +19169,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12100,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12100,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -19205,12 +19205,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12110,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12110,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -19241,12 +19241,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12120,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12120,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -19277,12 +19277,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12130,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12130,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -19313,12 +19313,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12140,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12140,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -19349,12 +19349,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12150,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12150,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -19385,12 +19385,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12160,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12160,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -19421,12 +19421,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12170,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12170,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -19457,12 +19457,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12180,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12180,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -19493,12 +19493,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12190,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12190,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -19529,12 +19529,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12200,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12200,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -19565,12 +19565,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12210,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12210,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -19601,12 +19601,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12220,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12220,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -19637,12 +19637,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12230,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12230,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -19673,12 +19673,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12240,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12240,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -19709,12 +19709,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12250,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12250,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -19745,12 +19745,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12260,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12260,
-  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams, Alone Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -19781,12 +19781,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12270,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12270,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn, Dynamic Hood, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -19817,12 +19817,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12280,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12280,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -19853,12 +19853,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12290,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12290,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -19889,12 +19889,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12300,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12300,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -19925,12 +19925,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12310,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12310,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -19961,12 +19961,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12320,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12320,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -19997,12 +19997,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12330,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12330,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -20033,12 +20033,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12340,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12340,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -20069,12 +20069,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12350,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12350,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -20105,12 +20105,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12360,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12360,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -20141,12 +20141,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12370,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12370,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -20177,12 +20177,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12380,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12380,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -20213,12 +20213,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12390,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12390,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -20249,12 +20249,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12400,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12400,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -20285,12 +20285,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12410,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12410,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -20321,12 +20321,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12420,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12420,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -20357,12 +20357,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12430,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12430,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -20393,12 +20393,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12440,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12440,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -20429,12 +20429,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12450,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12450,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View, Chill Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -20465,12 +20465,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12460,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12460,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -20501,12 +20501,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12470,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12470,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -20537,12 +20537,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12480,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12480,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -20573,12 +20573,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12490,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12490,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -20609,12 +20609,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12500,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12500,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -20645,12 +20645,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12510,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12510,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -20681,12 +20681,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12520,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12520,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn, Dynamic Hood, Blue Dirt, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -20717,12 +20717,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12530,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12530,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -20753,12 +20753,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12540,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12540,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -20789,12 +20789,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12550,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12550,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -20825,12 +20825,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12560,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12560,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -20861,12 +20861,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12570,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12570,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -20897,12 +20897,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12580,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12580,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -20933,12 +20933,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12590,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12590,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -20969,12 +20969,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12600,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12600,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -21005,12 +21005,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12610,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12610,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View, Chill Revolution, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -21041,12 +21041,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12620,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12620,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -21077,12 +21077,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12630,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12630,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View, Chill Revolution, Dynamic Autumn, Heroic Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -21113,12 +21113,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12640,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12640,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt, Electric Dreams, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -21149,12 +21149,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12650,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12650,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -21185,12 +21185,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12660,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12660,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -21221,12 +21221,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12670,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12670,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21257,12 +21257,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12680,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12680,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -21293,12 +21293,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12690,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12690,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -21329,12 +21329,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12700,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12700,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -21365,12 +21365,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12710,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12710,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -21401,12 +21401,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12720,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12720,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn, Dynamic Hood, Blue Dirt, Chill Hood, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -21437,12 +21437,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12730,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12730,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View, Heroic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -21473,12 +21473,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12740,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12740,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn, Dynamic Hood, Blue Dirt, Chill Hood, Teen Guide, Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -21509,12 +21509,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12750,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12750,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -21545,12 +21545,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12760,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12760,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt, Electric Dreams, Electric Revolution, Chill Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -21581,12 +21581,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12770,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12770,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21617,12 +21617,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12780,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12780,
-  "message" : "Albums:\n\t[Blue Technology, Groovy Dreams, Alone Autumn, Breezy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -21653,12 +21653,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12790,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12790,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -21689,12 +21689,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12800,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12800,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -21725,12 +21725,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12810,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12810,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -21761,12 +21761,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12820,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12820,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -21797,12 +21797,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12830,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12830,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -21833,12 +21833,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12840,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12840,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -21869,12 +21869,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12850,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12850,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -21905,12 +21905,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12860,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12860,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -21941,12 +21941,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12870,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12870,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View, Heroic Harmonies, Electric Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21977,12 +21977,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12880,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12880,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -22013,12 +22013,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12890,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12890,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -22049,12 +22049,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 12900,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 12900,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -22085,12 +22085,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 12910,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 12910,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -22121,12 +22121,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 12920,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 12920,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn, Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -22157,12 +22157,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 12930,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 12930,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn, Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -22193,12 +22193,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 12940,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 12940,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn, Chill Dreams, Chill Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -22229,12 +22229,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 12950,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 12950,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -22265,12 +22265,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 12960,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 12960,
-  "message" : "Albums:\n\t[Teen Technology, Electric View, Teen Hood, Alone View, Teen Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -22301,12 +22301,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 12970,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 12970,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt, Electric Dreams, Electric Revolution, Chill Guide, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -22337,12 +22337,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 12980,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 12980,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood, Dynamic Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -22373,12 +22373,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 12990,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 12990,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -22409,12 +22409,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 13000,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13000,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View, Heroic Harmonies, Electric Revolution, Groovy Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -22445,12 +22445,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 13010,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 13010,
-  "message" : "Albums:\n\t[Bad Autumn, Breezy Autumn, Dynamic Hood, Blue Dirt, Chill Hood, Teen Guide, Chill Funeral , Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -22481,12 +22481,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 13020,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13020,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View, Heroic Harmonies, Electric Revolution, Groovy Guide, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -22517,12 +22517,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 13030,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 13030,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt, Electric Dreams, Electric Revolution, Chill Guide, Electric Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -22553,12 +22553,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 13040,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 13040,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -22589,12 +22589,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 13050,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13050,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -22625,12 +22625,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 13060,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13060,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -22661,12 +22661,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 13070,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 13070,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View, Heroic Harmonies, Electric Revolution, Groovy Guide, Electric Technology, Dynamic Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -22697,12 +22697,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 13080,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 13080,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood, Dynamic Revolution, Teen View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -22733,12 +22733,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 13090,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 13090,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -22769,12 +22769,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 13100,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13100,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn, Chill Dreams, Chill Autumn, Dynamic Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -22805,12 +22805,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 13110,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 13110,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood, Dynamic Revolution, Teen View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -22841,12 +22841,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 13120,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13120,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood, Dynamic Revolution, Teen View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -22877,12 +22877,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 13130,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 13130,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn, Chill Dreams, Chill Autumn, Dynamic Harmonies, Chill View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -22913,12 +22913,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 13140,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 13140,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood, Dynamic Revolution, Teen View, Electric Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -22949,12 +22949,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 13150,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13150,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -22985,12 +22985,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 13160,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13160,
-  "message" : "Albums:\n\t[Alone Hood, Teen Revolution, Blue Technology, Groovy Harmonies, Electric Dreams, Blue Guide, Chill Technology, Teen Autumn, Groovy Dirt, Heroic View, Electric Technology, Heroic Harmonies, Heroic Autumn, Chill Hood]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -23021,12 +23021,12 @@
   "command" : "changePage",
   "user" : "alice22",
   "timestamp" : 13170,
-  "message" : "alice22 is trying to access a non-existent page."
+  "message" : "alice22 accessed Home successfully."
 }, {
   "user" : "alice22",
   "command" : "printCurrentPage",
   "timestamp" : 13170,
-  "message" : "Albums:\n\t[Groovy Guide, Groovy Hood, Chill Hood, Alone Hood, Breezy Revolution, Blue Revolution, Electric Hood, Groovy Dreams, Heroic View, Breezy Harmonies, Heroic Dreams, Breezy Hood, Blue Technology, Bad Autumn, Teen Technology, Chill Funeral , Electric Guide, Groovy Revolution, Heroic Technology, Blue Hood, Dynamic Revolution, Teen View, Electric Dirt, Electric Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -23057,12 +23057,12 @@
   "command" : "changePage",
   "user" : "bob35",
   "timestamp" : 13180,
-  "message" : "bob35 is trying to access a non-existent page."
+  "message" : "bob35 accessed Home successfully."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 13180,
-  "message" : "Albums:\n\t[Breezy View, Blue Autumn, Groovy Funeral , Bad Autumn, Teen Hood, Groovy Technology, Alone Technology, Groovy Dreams, Heroic Funeral , Groovy View, Heroic Harmonies, Electric Revolution, Groovy Guide, Electric Technology, Dynamic Dirt, Chill Funeral ]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Paint It Black]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -23093,12 +23093,12 @@
   "command" : "changePage",
   "user" : "carol19",
   "timestamp" : 13190,
-  "message" : "carol19 is trying to access a non-existent page."
+  "message" : "carol19 accessed Home successfully."
 }, {
   "user" : "carol19",
   "command" : "printCurrentPage",
   "timestamp" : 13190,
-  "message" : "Albums:\n\t[Bad Revolution, Chill Technology, Electric Revolution, Dynamic Autumn, Alone View, Bad Harmonies, Bad Guide, Bad View, Teen Funeral , Heroic Technology, Blue Autumn, Heroic Funeral , Groovy Funeral , Alone Dreams, Dynamic View, Groovy Hood, Chill Harmonies, Breezy Hood, Groovy Guide, Heroic View, Heroic Autumn, Blue View, Electric Guide, Groovy Autumn, Chill Dreams, Chill Autumn, Dynamic Harmonies, Chill View, Bad Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Whatever You Need, Blank Space]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "david27",
@@ -23129,12 +23129,12 @@
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 13200,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "david27",
   "command" : "printCurrentPage",
   "timestamp" : 13200,
-  "message" : "Albums:\n\t[Bad Revolution, Groovy Harmonies, Teen Harmonies, Chill Autumn, Alone Hood, Chill Dirt, Breezy Harmonies, Electric Technology, Electric Revolution, Electric Dreams, Bad Harmonies, Groovy Guide, Dynamic Autumn, Chill Hood, Breezy Autumn, Alone Guide, Blue Dirt, Groovy Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Don't]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -23165,12 +23165,12 @@
   "command" : "changePage",
   "user" : "emily30",
   "timestamp" : 13210,
-  "message" : "emily30 is trying to access a non-existent page."
+  "message" : "emily30 accessed Home successfully."
 }, {
   "user" : "emily30",
   "command" : "printCurrentPage",
   "timestamp" : 13210,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View, Chill Revolution, Dynamic Autumn, Heroic Dreams, Electric View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -23201,12 +23201,12 @@
   "command" : "changePage",
   "user" : "frank21",
   "timestamp" : 13220,
-  "message" : "frank21 is trying to access a non-existent page."
+  "message" : "frank21 accessed Home successfully."
 }, {
   "user" : "frank21",
   "command" : "printCurrentPage",
   "timestamp" : 13220,
-  "message" : "Albums:\n\t[Electric Funeral , Bad Dirt, Bad Dreams, Dynamic Dirt, Blue Guide, Teen Hood, Groovy Revolution, Heroic Technology, Heroic Hood, Bad Funeral , Groovy Hood, Chill Dirt, Electric Revolution, Alone Dirt, Teen Guide, Bad Hood, Heroic View, Teen Technology, Chill Dreams]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Love Story]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -23237,12 +23237,12 @@
   "command" : "changePage",
   "user" : "grace25",
   "timestamp" : 13230,
-  "message" : "grace25 is trying to access a non-existent page."
+  "message" : "grace25 accessed Home successfully."
 }, {
   "user" : "grace25",
   "command" : "printCurrentPage",
   "timestamp" : 13230,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View, Chill Revolution, Dynamic Autumn, Heroic Dreams, Electric View]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -23273,12 +23273,12 @@
   "command" : "changePage",
   "user" : "henry26",
   "timestamp" : 13240,
-  "message" : "henry26 is trying to access a non-existent page."
+  "message" : "henry26 accessed Home successfully."
 }, {
   "user" : "henry26",
   "command" : "printCurrentPage",
   "timestamp" : 13240,
-  "message" : "Albums:\n\t[Groovy Hood, Teen Guide, Alone Technology]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Happier]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -23309,12 +23309,12 @@
   "command" : "changePage",
   "user" : "irene33",
   "timestamp" : 13250,
-  "message" : "irene33 is trying to access a non-existent page."
+  "message" : "irene33 accessed Home successfully."
 }, {
   "user" : "irene33",
   "command" : "printCurrentPage",
   "timestamp" : 13250,
-  "message" : "Albums:\n\t[Groovy Guide, Chill Funeral , Chill View, Bad Revolution, Chill Technology, Breezy View, Chill Revolution, Dynamic Autumn, Heroic Dreams, Electric View, Breezy Revolution]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[The Man]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -23345,12 +23345,12 @@
   "command" : "changePage",
   "user" : "jack29",
   "timestamp" : 13260,
-  "message" : "jack29 is trying to access a non-existent page."
+  "message" : "jack29 accessed Home successfully."
 }, {
   "user" : "jack29",
   "command" : "printCurrentPage",
   "timestamp" : 13260,
-  "message" : "Albums:\n\t[Groovy Autumn, Heroic Guide, Bad Guide, Blue Hood, Dynamic Dirt, Electric Dreams, Electric Revolution, Chill Guide, Electric Technology, Alone Harmonies]\n\nMerch:\n\t[]\n\nEvents:\n]"
+  "message" : "Liked songs:\n\t[Delicate, Start Me Up]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -25954,7 +25954,7 @@
 }, {
   "command" : "getAllUsers",
   "timestamp" : 14850,
-  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "jsimpson", "mccarthyluis", "glester", "anthony22", "jacobdean", "amanda16", "cbutler", "john99", "barmstrong", "charlesgarcia", "fwebb", "matthewporter" ]
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "jsimpson", "mccarthyluis", "glester", "anthony22", "jacobdean", "amanda16", "cbutler", "john99", "barmstrong", "charlesgarcia", "fwebb", "matthewporter", "barmstrong", "charlesgarcia", "john99", "jenningsbeth", "fwebb", "matthewporter" ]
 }, {
   "command" : "getTop5Playlists",
   "timestamp" : 14850,

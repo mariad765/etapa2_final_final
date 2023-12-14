@@ -41,7 +41,7 @@
 }, {
   "command" : "getAllUsers",
   "timestamp" : 85,
-  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "soundseeker21", "melodicwanderer", "sonicpainter", "echoexplorer", "rhythmweaver" ]
+  "result" : [ "alice22", "bob35", "carol19", "david27", "emily30", "frank21", "grace25", "henry26", "irene33", "jack29", "soundseeker21", "melodicwanderer", "sonicpainter", "echoexplorer", "rhythmweaver", "audiosage", "soundcurator", "musicmaven" ]
 }, {
   "command" : "addPodcast",
   "user" : "audiosage",
@@ -218,12 +218,12 @@
   "command" : "changePage",
   "user" : "soundseeker21",
   "timestamp" : 955,
-  "message" : "soundseeker21 is trying to access a non-existent page."
+  "message" : "soundseeker21 accessed Home successfully."
 }, {
   "command" : "deleteUser",
   "user" : "melodicwanderer",
   "timestamp" : 960,
-  "message" : "melodicwanderer was successfully deleted."
+  "message" : "melodicwanderer can't be deleted."
 }, {
   "command" : "repeat",
   "user" : "carol19",
@@ -243,7 +243,7 @@
   "command" : "deleteUser",
   "user" : "audiosage",
   "timestamp" : 1100,
-  "message" : "audiosage can't be deleted."
+  "message" : "audiosage was successfully deleted."
 }, {
   "command" : "select",
   "user" : "david27",
@@ -253,7 +253,7 @@
   "command" : "deleteUser",
   "user" : "melodicwanderer",
   "timestamp" : 1500,
-  "message" : "The username melodicwanderer doesn't exist."
+  "message" : "melodicwanderer can't be deleted."
 }, {
   "command" : "deleteUser",
   "user" : "musicmaven",
@@ -278,22 +278,22 @@
   "command" : "deleteUser",
   "user" : "melodicwanderer",
   "timestamp" : 7855,
-  "message" : "The username melodicwanderer doesn't exist."
+  "message" : "melodicwanderer was successfully deleted."
 }, {
   "command" : "deleteUser",
   "user" : "sonicpainter",
   "timestamp" : 7860,
-  "message" : "sonicpainter was successfully deleted."
+  "message" : "sonicpainter can't be deleted."
 }, {
   "command" : "changePage",
   "user" : "david27",
   "timestamp" : 7885,
-  "message" : "david27 is trying to access a non-existent page."
+  "message" : "david27 accessed Home successfully."
 }, {
   "command" : "deleteUser",
   "user" : "sonicpainter",
   "timestamp" : 7890,
-  "message" : "The username sonicpainter doesn't exist."
+  "message" : "sonicpainter was successfully deleted."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",

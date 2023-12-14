@@ -11,7 +11,9 @@ import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
+import app.strategy.ArtistPage;
 import app.strategy.HomePage;
+import app.strategy.HostPage;
 import app.strategy.LikedContent;
 import app.strategy.UserPage;
 import app.utils.Enums;
@@ -428,6 +430,18 @@ public class User extends LibraryEntry {
             setUserPage(userHomePage);
             return getUsername() + " accessed Home successfully.";
         }
+        // if the user is on another user's page, it can still change the page to home
+        //check if the userpage is another's user page
+        if (userPage instanceof ArtistPage) {
+            setUserPage(userHomePage);
+            return getUsername() + " accessed Home successfully.";
+        }
+        if(userPage instanceof HostPage){
+            setUserPage(userHomePage);
+            return getUsername() + " accessed Home successfully.";
+        }
+
+
         return getUsername() + " is trying to access a non-existent page.";
     }
 }

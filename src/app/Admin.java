@@ -250,6 +250,12 @@ public class Admin {
         for (User user : allUsers) {
             allUserNames.add(user.getUsername());
         }
+
+        // add hosts at the end
+        for (Host host : hosts) {
+            allUserNames.add(host.getUsername());
+        }
+
         return allUserNames;
     }
 
@@ -263,59 +269,77 @@ public class Admin {
                 return "User " + user.getUsername() + " can't be deleted";
             }
         }
-        // check if anyone is listening to his podcasts
-//        for (Podcast podcast : podcasts) {
-//            if (podcast.getOwner().equals(user.getUsername())) {
-//                for (User u : users) {
-//                    PlayerStats stats=u.getPlayerStats();
-//                    // make a list of names will all podcast episodes
-//                    List<String> podcastEpisodes = new ArrayList<>();
-//                    for (Episode episode : podcast.getEpisodes()) {
-//                        podcastEpisodes.add(episode.getName());
-//                    }
-//                    // check if any user is listening to any of the episodes
-//                    for (String episode : podcastEpisodes) {
-//                        if (stats.getName().equals(episode)) {
-//                            return "User " + user.getUsername() + " can't be deleted";
-//                        }
-//                    }
-//
-//                }
-//            }
-//        }
+
         // check if anyone is listening to the host s podcasts episode
         if (user.getType().equals("host")) {
-            for (Podcast podcast : podcasts) {
+            Host h = Admin.getHost(user.getUsername());
+            for (Podcast podcast : h.getPodcasts()) {
+                //check for  null
+                // find a way to not use getOwner
+                // get the host
+//                if (podcast.getOwner() == null) {
+//                  //  System.out.println("not working");
+//                    continue;
+//                }
+//                if (podcast.getOwner().equals(user.getUsername())) {
                 for (Episode episode : podcast.getEpisodes()) {
                     for (User u : users) {
                         PlayerStats stats = u.getPlayerStats();
                         if (stats.getName().equals(episode.getName())) {
+                            //  System.out.println(user.getUsername());
+
                             return user.getUsername() + " can't be deleted.";
                         }
                     }
                 }
+//                }
+
+
             }
         }
         // check if any user is on host s page
         if (user.getType().equals("host")) {
             for (User u : users) {
-                if (u.getUserPage().userName().equals(user.getUsername()) && !(u.getUserPage()
-                        .equals(user.getUserPage()))) {
+                if (u.getUserPage().userName().equals(user.getUsername()) && !(u.getUsername()
+                        .equals(user.getUsername()))) {
+
                     return user.getUsername() + " can't be deleted.";
                 }
             }
         }
         // check if any user is on an artists page
 
+        if (user.getType().equals("artist")) {
+            for (User u : users) {
+                // make sure page not null
+                if (u.getUserPage() == null) {
+                    continue;
+                }
+                // make sure name not null
+                if (u.getUserPage().userName() == null) {
+                    continue;
+                }
+                if (u.getUserPage().userName().equals(user.getUsername()) && !(u.getUserPage()
+                        .equals(user.getUserPage()))) {
+                    return user.getUsername() + " can't be deleted.";
+                }
+            }
+        }
+
 
         // check if anyone is listeningto his songs
         if (user.getType().equals("artist")) {
-            for (Song song : songs) {
-                for (User u : users) {
-                    PlayerStats stats = u.getPlayerStats();
-                    if (stats.getName().equals(song.getName())) {
-                        System.out.println("aici intrs");
-                        return user.getUsername() + " can't be deleted.";
+            Artist art = Admin.getArtist(user.getUsername());
+            assert art != null;
+
+            for (Album a : art.getAlbums()) {
+                for (Song song : a.getSongsFull()) {
+                    for (User u : users) {
+                        PlayerStats stats = u.getPlayerStats();
+                        if (stats.getName().equals(song.getName())) {
+                            // System.out.println("aici intrs");
+                            return user.getUsername() + " can't be deleted.";
+                        }
                     }
                 }
             }
@@ -363,7 +387,16 @@ public class Admin {
             for (Playlist playlist : user.getPlaylists()) {
                 for (User u : users) {
                     PlayerStats stats = u.getPlayerStats();
+                    // check for each song in playlist
+                    for (Song song : playlist.getSongs()) {
+                        if (stats.getName().equals(song.getName())) {
+                            users.add(user);
+
+                            return user.getUsername() + " can't be deleted.";
+                        }
+                    }
                     if (stats.getName().equals(playlist.getName())) {
+                        users.add(user);
                         return user.getUsername() + " can't be deleted.";
                     }
                 }
@@ -387,6 +420,15 @@ public class Admin {
             normalUsers.remove(user);
         }
         return user.getUsername() + " was successfully deleted.";
+    }
+
+    private static Artist getArtist(String username) {
+        for (Artist artist : artists) {
+            if (artist.getUsername().equals(username)) {
+                return artist;
+            }
+        }
+        return null;
     }
 
     public static List<Album> getAlbums() {
