@@ -70,11 +70,11 @@ public class HostPage implements UserPage {
     public void updatePage(final String userName) {
         User user = Admin.getUser(getHostName());
         assert user != null;
-        if (user instanceof Host h) {
+        if (Host.class.isAssignableFrom(user.getClass())) {
+            Host h = (Host) user;
             this.announcements = h.getAnnouncements();
             this.podcasts = h.getPodcasts();
         }
-
 
     }
 

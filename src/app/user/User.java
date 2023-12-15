@@ -590,15 +590,11 @@ public class User extends LibraryEntry {
             if (getConnectionStatus()) {
                 setConnectionStatus(false);
                 getPlayer().setUserIsOn(false);
-                System.out.println(getUsername() + " is offline.");
 
             } else {
 
                 setConnectionStatus(true);
                 getPlayer().setUserIsOn(true);
-                //show username
-                System.out.println(getUsername() + " is online.");
-
 
             }
 
@@ -649,23 +645,23 @@ public class User extends LibraryEntry {
             return getUsername() + " accessed Home successfully.";
         }
 
-        if (userPage instanceof HomePage) {
+        if (HomePage.class.isAssignableFrom(userPage.getClass())) {
             setUserPage(this.userLikedContentPage);
             return getUsername() + " accessed LikedContent successfully.";
         }
-        if (userPage instanceof LikedContent) {
+        if (LikedContent.class.isAssignableFrom(userPage.getClass())) {
             setUserPage(userHomePage);
             return getUsername() + " accessed Home successfully.";
         }
-        if (userPage instanceof LikedContentPage) {
+        if (LikedContentPage.class.isAssignableFrom(userPage.getClass())) {
             setUserPage(userHomePage);
             return getUsername() + " accessed Home successfully.";
         }
-        if (userPage instanceof ArtistPage) {
+        if (ArtistPage.class.isAssignableFrom(userPage.getClass())) {
             setUserPage(userHomePage);
             return getUsername() + " accessed Home successfully.";
         }
-        if (userPage instanceof HostPage) {
+        if (HostPage.class.isAssignableFrom(userPage.getClass())) {
             setUserPage(userHomePage);
             return getUsername() + " accessed Home successfully.";
         }

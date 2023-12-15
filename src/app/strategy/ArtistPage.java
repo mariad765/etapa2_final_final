@@ -97,7 +97,7 @@ public class ArtistPage implements UserPage {
         User user = Admin.getUser(getArtistName());
         assert user != null;
         //convert user to artist
-        if (user instanceof Artist) {
+        if (Artist.class.isAssignableFrom(user.getClass())) {
             Artist artist = (Artist) user;
 
             this.albums = artist.getAlbums();

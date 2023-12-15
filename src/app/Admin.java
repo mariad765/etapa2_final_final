@@ -405,7 +405,7 @@ public final class Admin {
         List<User> usersToRemove = new ArrayList<>();
 
         for (User user : allUsers) {
-            if (user instanceof Artist) {
+            if (Artist.class.isAssignableFrom(user.getClass())) {
                 for (Host host : hosts) {
                     if (host.getUsername().equals(user.getUsername())) {
                         usersToRemove.add(user);
@@ -419,10 +419,6 @@ public final class Admin {
 
 
         allUsers.removeAll(usersToRemove);
-
-        for (User user : allUsers) {
-            System.out.println(user.getUsername());
-        }
 
         List<String> allUserNames = new ArrayList<>();
         for (User user : allUsers) {
