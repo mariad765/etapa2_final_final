@@ -698,10 +698,8 @@ public final class Admin {
     public static List<String> getTop5Artists() {
         // create list
         List<Artist> sortedArtists = new ArrayList<>(artists);
-        // sort list
         sortedArtists.sort(Comparator.comparingInt(Artist::getTotalNumberOfLikes)
                 .reversed().thenComparing(Artist::getName));
-        // create new list
         List<String> topArtists = new ArrayList<>();
         // add top 5
         int count = 0;

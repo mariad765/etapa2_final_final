@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\Maria\IdeaProjects\tema2_etapa2\oop-project-2023\etapa2\.\src\app\Admin.java:694:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Maria\IdeaProjects\tema2_etapa2\oop-project-2023\etapa2\.\src\app\player\Player.java:186:32: Parameter time should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
