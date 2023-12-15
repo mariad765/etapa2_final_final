@@ -8,7 +8,15 @@ public class Merch {
     private String description;
     private int price;
 
-    public Merch(String name, String description, int price) {
+    /**
+     * Constructor for Merch
+     *
+     * @param name        name of the merch
+     * @param description description of the merch
+     * @param price       price of the merch
+     */
+    public Merch(final String name, final String description,
+                 final int price) {
         this.name = name;
         this.description = description;
         this.price = price;

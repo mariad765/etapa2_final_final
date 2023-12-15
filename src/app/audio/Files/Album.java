@@ -1,17 +1,16 @@
 package app.audio.Files;
 
 import app.audio.Collections.AudioCollection;
-import app.audio.LibraryEntry;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import fileio.input.SongInput;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Album extends AudioCollection {
     private String name;
-
-    //ignore the owner when putting in json file
     @JsonIgnore
     private String owner;
     @JsonIgnore
@@ -19,35 +18,32 @@ public class Album extends AudioCollection {
 
     private List<String> songs;
 
-    public Album(String name, String owner, List<SongInput> songs) {
+    /**
+     * Constructor for Album
+     * @param name  name of the album
+     * @param owner owner of the album
+     * @param songs songs in the album
+     */
+    public Album(final String name, final String owner, final List<SongInput> songs) {
         super(name, owner);
         this.name = name;
         this.owner = owner;
         this.songsFull = new ArrayList<>();
         this.songs = new ArrayList<>();
-        //init songs
         for (SongInput song : songs) {
-            this.songsFull.add(new Song(song.getName(), song.getDuration(), this.name, song.getTags(),
-                    song.getLyrics(), song.getGenre(), song.getReleaseYear(), song.getArtist()));
+            this.songsFull.add(new Song(song.getName(),
+                    song.getDuration(), this.name, song.getTags(),
+                    song.getLyrics(), song.getGenre(), song.getReleaseYear(),
+                    song.getArtist()));
             this.songs.add(song.getName());
         }
 
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getOwner() {
-        return owner;
-    }
-
-    public List<Song> getSongsFull() {
-        return songsFull;
-    }
-    public List<String> getSongs() {
-        return songs;
-    }
+    /**
+     * Method to get the total duration of the album
+     * @return total duration of the album
+     */
     @JsonIgnore
 
     public Integer getTotalNumberOfLikes() {
@@ -57,17 +53,25 @@ public class Album extends AudioCollection {
         }
         return total;
     }
+
+    /**
+     * Method to get the total duration of the album
+     * @return total duration of the album
+     */
     @JsonIgnore
     @Override
     public int getNumberOfTracks() {
-        //get songs in albume
         return songs.size();
 
     }
 
+    /**
+     * Method to get the track by index
+     * @param index inde of the track
+     * @return track at the given index
+     */
     @Override
-    public AudioFile getTrackByIndex(int index) {
-        //get song by index
+    public AudioFile getTrackByIndex(final int index) {
         return songsFull.get(index);
 
     }

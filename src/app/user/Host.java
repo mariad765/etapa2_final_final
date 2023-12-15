@@ -9,23 +9,27 @@ import app.strategy.HostPage;
 import app.strategy.UserPage;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.google.common.math.Stats;
 import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Host extends User {
-    @Getter
     private List<Podcast> podcasts;
-    @Getter
     private List<Announcement> announcements;
-    @Getter
     private UserPage hostPage;
 
-
-    public Host(String username, int age, String city, String type) {
+    /**
+     * Constructor for Host
+     *
+     * @param username username
+     * @param age      age
+     * @param city     city
+     * @param type     type
+     */
+    public Host(final String username, final int age,
+                final String city, final String type) {
         super(username, age, city, type);
         this.podcasts = new ArrayList<>();
         this.announcements = new ArrayList<>();
@@ -33,25 +37,47 @@ public class Host extends User {
 
     }
 
-    public Podcast createPodcast(String name, String description, List<Episode> episodes) {
+    /**
+     * Create a new podcast
+     *
+     * @param name        name of the podcast
+     * @param description description of the podcast
+     * @param episodes    episodes in the podcast
+     * @return the new podcast
+     */
+    public Podcast createPodcast(
+            final String name, final String description,
+            final List<Episode> episodes) {
         return new Podcast(name, description, episodes);
     }
 
-    public String addPodcast(Podcast podcast) {
-        // check if the host has a podcast with the same name
+    /**
+     * Add a podcast
+     *
+     * @param podcast podcast
+     * @return a message
+     */
+    public String addPodcast(final Podcast podcast) {
+
         for (Podcast podcast1 : getPodcasts()) {
             if (podcast1.getName().equals(podcast.getName())) {
                 return getUsername() + " has another podcast with the same name.";
             }
         }
         this.podcasts.add(podcast);
-        // also add in the admin array of podcasts
+
         Admin.addPodcast(podcast);
         return getUsername() + " has added new podcast successfully.";
     }
 
-    public String addAnnouncement(Announcement announcement) {
-        //<username> has already added an announcement with this name.
+    /**
+     * Add an announcement
+     *
+     * @param announcement announcement
+     * @return a message
+     */
+    public String addAnnouncement(final Announcement announcement) {
+
         for (Announcement announcement1 : getAnnouncements()) {
             if (announcement1.getName().equals(announcement.getName())) {
                 return getUsername() + " has already added an announcement with this name.";
@@ -62,12 +88,26 @@ public class Host extends User {
 
     }
 
-    public Announcement createAnnouncement(String name, String description) {
+    /**
+     * Create an announcement
+     *
+     * @param name        name of the announcement
+     * @param description description of the announcement
+     * @return the new announcement
+     */
+    public Announcement createAnnouncement(
+            final String name, final String description) {
         return new Announcement(name, description);
     }
 
+    /**
+     * Remove an announcement
+     *
+     * @param name name of the announcement
+     * @return a message
+     */
 
-    public String removeAnnouncement(String name) {
+    public String removeAnnouncement(final String name) {
         for (Announcement announcement : getAnnouncements()) {
             if (announcement.getName().equals(name)) {
                 getAnnouncements().remove(announcement);
@@ -77,45 +117,57 @@ public class Host extends User {
         return getUsername() + " has no announcement with the given name.";
     }
 
+    /**
+     * Show podcasts
+     *
+     * @return a JsonNode
+     */
     public JsonNode showPodcasts() {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-            // Create a list of simplified Podcast objects
-            ArrayList<Object> simplifiedPodcasts = new ArrayList<>();
-            for (Podcast podcast : podcasts) {
-                List<String> episodeNames = new ArrayList<>();
-                for (Episode episode : podcast.getEpisodes()) {
-                    episodeNames.add(episode.getName());
-                }
-                simplifiedPodcasts.add(new SimplifiedPodcast(podcast.getName(), episodeNames));
+        ArrayList<Object> simplifiedPodcasts = new ArrayList<>();
+        for (Podcast podcast : podcasts) {
+            List<String> episodeNames = new ArrayList<>();
+            for (Episode episode : podcast.getEpisodes()) {
+                episodeNames.add(episode.getName());
             }
+            simplifiedPodcasts.add(new SimplifiedPodcast(podcast.getName(), episodeNames));
+        }
 
-            // Convert the simplifiedPodcasts list into a JSON string
-            return objectMapper.valueToTree(simplifiedPodcasts);
+        return objectMapper.valueToTree(simplifiedPodcasts);
 
-       // return null;
+
     }
 
-    public String removePodcast(String name) {
-        // get the user
+    /**
+     * Removes a podcast and its episodes from the library,
+     * ensuring no active user has these episodes in their stats.
+     *
+     * @param name The name of the podcast to be removed.
+     * @return A message indicating the success or failure
+     * of the podcast removal operation.
+     * - If the podcast is successfully deleted, a success
+     * message is returned.
+     * - If the podcast cannot be deleted due to episodes being
+     * in active user stats or not found,
+     * an appropriate failure message is returned.
+     */
+    public String removePodcast(final String name) {
+
         Host user = Admin.getHost(getUsername());
-        // if podcast doest exist it can't be deleted
 
-
-        // check if any user is listening to an episode from podcast
         for (Podcast podcast : getPodcasts()) {
             if (podcast.getName().equals(name)) {
                 assert user != null;
                 PlayerStats stats = user.getPlayerStats();
                 for (Episode episode : podcast.getEpisodes()) {
-                    if(stats.getName().equals(episode.getName())){
-                        return getUsername()+" can't delete this podcast";
+                    if (stats.getName().equals(episode.getName())) {
+                        return getUsername() + " can't delete this podcast";
                     }
                 }
             }
         }
-        // check if the podcast is in anyone s player
         for (User user1 : Admin.getUsers()) {
             PlayerStats stats = user1.getPlayerStats();
             for (Podcast podcast : getPodcasts()) {
@@ -128,7 +180,6 @@ public class Host extends User {
         }
         for (Podcast podcast : getPodcasts()) {
             if (podcast.getName().equals(name)) {
-                // also remove from admin
                 Admin.getPodcasts().remove(podcast);
                 getPodcasts().remove(podcast);
                 return getUsername() + " deleted the podcast successfully.";

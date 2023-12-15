@@ -14,11 +14,23 @@ public final class Playlist extends AudioCollection {
     private Integer followers;
     private int timestamp;
 
-    public Playlist(String name, String owner) {
+    /**
+     * Constructor for Playlist
+     * @param name name of playlist
+     * @param owner owner of playlist
+     */
+
+    public Playlist(final String name, final String owner) {
         this(name, owner, 0);
     }
 
-    public Playlist(String name, String owner, int timestamp) {
+    /**
+     * Constructor for Playlist
+     * @param name name of playlist
+     * @param owner owner of playlist
+     * @param timestamp timestamp of playlist
+     */
+    public Playlist(final String name, final  String owner, final int timestamp) {
         super(name, owner);
         this.songs = new ArrayList<>();
         this.visibility = Enums.Visibility.PUBLIC;
@@ -26,21 +38,41 @@ public final class Playlist extends AudioCollection {
         this.timestamp = timestamp;
     }
 
-    public boolean containsSong(Song song) {
+    /**
+     * Checks if playlist contains song
+     * @param song song to check
+     * @return true if playlist contains song, false otherwise
+     */
+    public boolean containsSong(final Song song) {
         return songs.contains(song);
     }
 
-    public void addSong(Song song) {
+    /**
+     * Adds song to playlist
+     * @param song song to add
+     */
+    public void addSong(final Song song) {
         songs.add(song);
     }
 
-    public void removeSong(Song song) {
+    /**
+     * Removes song from playlist
+     * @param song song to remove
+     */
+    public void removeSong(final Song song) {
         songs.remove(song);
     }
-    public void removeSong(int index) {
+    /**
+     * Removes song by index
+     * @param index index of song to remove
+     */
+    public void removeSong(final int index) {
         songs.remove(index);
     }
 
+    /**
+     * Switches visibility of playlist
+     */
     public void switchVisibility() {
         if (visibility == Enums.Visibility.PUBLIC) {
             visibility = Enums.Visibility.PRIVATE;
@@ -49,10 +81,16 @@ public final class Playlist extends AudioCollection {
         }
     }
 
+    /**
+     * Increases followers of playlist
+     */
     public void increaseFollowers() {
         followers++;
     }
 
+    /**
+     * Decreases followers of playlist
+     */
     public void decreaseFollowers() {
         followers--;
     }
@@ -63,22 +101,28 @@ public final class Playlist extends AudioCollection {
     }
 
     @Override
-    public AudioFile getTrackByIndex(int index) {
+    public AudioFile getTrackByIndex(final int index) {
         return songs.get(index);
     }
 
     @Override
-    public boolean isVisibleToUser(String user) {
-        return this.getVisibility() == Enums.Visibility.PUBLIC ||
-                (this.getVisibility() == Enums.Visibility.PRIVATE && this.getOwner().equals(user));
+    public boolean isVisibleToUser(final String user) {
+        return this.getVisibility() == Enums.Visibility.PUBLIC
+                || (this.getVisibility() == Enums.Visibility.PRIVATE
+                && this.getOwner().equals(user));
     }
 
     @Override
-    public boolean matchesFollowers(String followers) {
-        return filterByFollowersCount(this.getFollowers(), followers);
+    public boolean matchesFollowers(final String followersQuery) {
+        return filterByFollowersCount(this.getFollowers(), followersQuery);
     }
-
-    private static boolean filterByFollowersCount(int count, String query) {
+    /**
+     * Filters by followers count
+     * @param count count to filter by
+     * @param query query to filter by
+     * @return true if count matches query, false otherwise
+     */
+    private static boolean filterByFollowersCount(final int count, final String query) {
         if (query.startsWith("<")) {
             return count < Integer.parseInt(query.substring(1));
         } else if (query.startsWith(">")) {

@@ -1,43 +1,64 @@
 package fileio.input;
 
+import lombok.Getter;
+
+@Getter
 public final class UserInput {
     private String username;
     private int age;
     private String city;
 
+    /**
+     * Constructor used for setting the fields of an UserInput object.
+     */
     public UserInput() {
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
+    /**
+     * Getter for username
+     *
+     * @param username the username of the user
+     */
+    public void setUsername(final String username) {
         this.username = username;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
+    /**
+     * Getter for age
+     */
+    public void setAge(final int age) {
         this.age = age;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
+    /**
+     * Getter for city
+     *
+     * @param city the city of the user
+     */
+    public void setCity(final String city) {
         this.city = city;
     }
 
+    /**
+     * Turn the object into a string
+     *
+     * @return the string
+     */
     @Override
     public String toString() {
-        return "UserInput{" +
-                "username='" + username + '\'' +
-                ", age=" + age +
-                ", city='" + city + '\'' +
+        return "UserInput{"
+                +
+                "username='"
+                + username
+                + '\''
+                +
+                ", age="
+                + age
+                +
+                ", city='"
+                + city
+                + '\''
+                +
                 '}';
     }
 }

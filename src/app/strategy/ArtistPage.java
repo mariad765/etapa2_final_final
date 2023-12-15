@@ -11,33 +11,46 @@ import lombok.Getter;
 import java.util.List;
 
 public class ArtistPage implements UserPage {
-    private  List<Merch> merchs;
+    private List<Merch> merchs;
     @Getter
     private String artistName;
     private List<Album> albums;
     private List<Event> events;
 
-    //constructor
-    public ArtistPage(List<Album> albumb, List<Event> events, String artistName,
-                      List<Merch> merchs) {
+    /**
+     * Constructor for ArtistPage
+     *
+     * @param albumb     albums
+     * @param events     events
+     * @param artistName artist name
+     * @param merchs     merchs
+     */
+    public ArtistPage(final List<Album> albumb,
+                      final List<Event> events, final String artistName,
+                      final List<Merch> merchs) {
         this.albums = albumb;
         this.events = events;
-        this.merchs= merchs;
+        this.merchs = merchs;
         this.artistName = artistName;
     }
 
+    /**
+     * Display page
+     *
+     * @return page content
+     */
     @Override
     public String displayPage() {
         StringBuilder pageContent = new StringBuilder();
 
         pageContent.append("Albums:\n\t");
-      //  System.out.println("k");
+
         if (albums.isEmpty()) {
             pageContent.append("[]");
         } else {
             pageContent.append("[");
             albums.forEach(album -> pageContent.append(album.getName()).append(", "));
-            pageContent.setLength(pageContent.length() - 2); // Remove the last comma and space
+            pageContent.setLength(pageContent.length() - 2);
             pageContent.append("]");
         }
         pageContent.append("\n\nMerch:\n\t");
@@ -51,25 +64,36 @@ public class ArtistPage implements UserPage {
                     .append(":\n\t")
                     .append(merchandise.getDescription())
                     .append(", "));
-            pageContent.setLength(pageContent.length() - 2); // Remove the last comma and space
+            pageContent.setLength(pageContent.length() - 2);
             pageContent.append("]");
         }
+        if (events.isEmpty()) {
+            pageContent.append("\n\nEvents:\n\t[]");
+        }
 
-        pageContent.append("\n\nEvents:\n\t[");
-        events.forEach(event -> pageContent.append(event.getName())
-                .append(" - ")
-                .append(event.getDate())
-                .append(":\n\t")
-                .append(event.getDescription())
-                .append(", "));
-        pageContent.setLength(pageContent.length() - 2); // Remove the last comma and space
-        pageContent.append("]");
-
+        if (!events.isEmpty()) {
+            pageContent.append("\n\nEvents:\n\t[");
+            events.forEach(event -> pageContent.append(event.getName())
+                    .append(" - ")
+                    .append(event.getDate())
+                    .append(":\n\t")
+                    .append(event.getDescription())
+                    .append(", "));
+            pageContent.setLength(pageContent.length() - 2);
+            pageContent.append("]");
+            // pageContent.append("\n");}
+        }
         return pageContent.toString();
+
     }
 
+    /**
+     * Update page
+     *
+     * @param userName username of page owner
+     */
     @Override
-    public void updatePage(String userName) {
+    public void updatePage(final String userName) {
         User user = Admin.getUser(getArtistName());
         assert user != null;
         //convert user to artist
@@ -82,8 +106,15 @@ public class ArtistPage implements UserPage {
 
     }
 
+    /**
+     * Get username
+     *
+     * @return username
+     */
+
     @Override
     public String userName() {
         return getArtistName();
     }
+
 }

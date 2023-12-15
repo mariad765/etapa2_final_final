@@ -10,7 +10,14 @@ public class Event {
     private String date;
     private String description;
 
-    public Event(String name, String date, String description) {
+    /**
+     * Constructor for Event
+     * @param name name of the event
+     * @param date date of the event
+     * @param description description of the event
+     */
+    public Event(final String name,
+                 final String date, final String description) {
         this.name = name;
         this.date = date;
         this.description = description;

@@ -23,7 +23,14 @@ public class Artist extends User {
     private List<Merch> merchs;
     private UserPage artistPage;
 
-    public Artist(String username, int age, String city) {
+    /**
+     * Constructor for Artist
+     *
+     * @param username username
+     * @param age      age
+     * @param city     city
+     */
+    public Artist(final String username, final int age, final String city) {
         super(username, age, city, "artist");
         this.albums = new ArrayList<>();
         this.events = new ArrayList<>();
@@ -32,26 +39,53 @@ public class Artist extends User {
 
     }
 
-    public Album createAlbum(String name, List<SongInput> songs) {
+    /**
+     * Create a new album
+     *
+     * @param name  name of the album
+     * @param songs songs in the album
+     * @return the new album
+     */
+    public Album createAlbum(final String name,
+                             final List<SongInput> songs) {
         return new Album(name, this.getUsername(), songs);
     }
 
-    public Event createEvent(String name, String date, String description) {
+    /**
+     * Create a new event
+     */
+    public Event createEvent(final String name, final String date,
+                             final String description) {
         return new Event(name, date, description);
     }
 
-    public Merch createMerch(String name, int price, String description) {
+    /**
+     * Create a new merch
+     *
+     * @param name        name of the merch
+     * @param price       price of the merch
+     * @param description description of the merch
+     * @return the new merch
+     */
+    public Merch createMerch(final String name,
+                             final int price,
+                             final String description) {
         return new Merch(name, description, price);
     }
 
-    public String addAlbum(Album album, String artist) {
-        // check if the albume already exists for this user
+    /**
+     * Add a new album
+     *
+     * @param album  album to be added
+     * @param artist artist that adds the album
+     * @return a message
+     */
+    public String addAlbum(final Album album, final String artist) {
         for (Album album1 : getAlbums()) {
             if (album1.getName().equals(album.getName())) {
                 return getUsername() + " has another album with the same name.";
             }
         }
-        // check if the albume has the same songFULL twice
         Set<String> songNames = new HashSet<>();
         for (Song song : album.getSongsFull()) {
             if (!songNames.add(song.getName())) {
@@ -63,30 +97,38 @@ public class Artist extends User {
         return artist + " has added new album successfully.";
     }
 
-    public String addEvent(Event event) {
-        //check if date is valid
+    /**
+     * Add a new event
+     *
+     * @param event event to be added
+     * @return a message
+     */
+    public String addEvent(final Event event) {
         if (!event.getDate()
                 .matches("^(0[1-9]|[12][0-9]|3[01])\\-(0[1-9]|1[012])\\-(19|20)\\d\\d$")) {
             return "Event for " + getUsername() + " does not have a valid date.";
         }
-        //check if event is already in event list
         for (Event event1 : getEvents()) {
             if (event1.getName().equals(event.getName())) {
                 return getUsername() + " has another event with the same name";
             }
         }
-
         events.add(event);
-
         return getUsername() + " has added new event successfully.";
     }
 
-    public String addMerchant(Merch merch) {
-//price can't be negative
+    /**
+     * Add a new merch
+     *
+     * @param merch merch to be added
+     * @return a message
+     */
+    public String addMerchant(final Merch merch) {
+
         if (merch.getPrice() < 0) {
             return "Price for merchandise can not be negative.";
         }
-        //check if merch is already in merch list
+
         for (Merch merch1 : getMerchs()) {
             if (merch1.getName().equals(merch.getName())) {
                 return getUsername() + " has merchandise with the same name.";
@@ -99,13 +141,28 @@ public class Artist extends User {
 
     }
 
-    public String removeAlbum(String name) {
+    /**
+     * Removes an album and its associated songs from the
+     * music library.
+     * Additionally, removes songs from user playlists
+     * and liked songs if present.
+     *
+     * @param name The name of the album to be removed.
+     * @return A message indicating the success or failure
+     * of the album removal operation.
+     * - If the album is successfully deleted, a
+     * success message is returned.
+     * - If the album is not found or cannot be
+     * deleted due to songs being in users' playlists
+     * or liked songs,
+     * an appropriate failure message is returned.
+     */
+    public String removeAlbum(final String name) {
 
 
         for (Album album : getAlbums()) {
             if (album.getName().equals(name)) {
-                // the album can't be deleted if any user has it loaded in their player
-                // check if any user has a song from that albume loaded
+
                 for (User user : Admin.getUsers()) {
                     PlayerStats stats = user.getPlayerStats();
                     // for songs in album check
@@ -116,17 +173,14 @@ public class Artist extends User {
                     }
 
                 }
-                // remove the songs from the album from any playlist
                 for (Song song : album.getSongsFull()) {
                     for (Playlist playlist : Admin.getPlaylists()) {
                         playlist.getSongs().remove(song);
                     }
                 }
-                // remove the songs in the album from songs
                 for (Song song : album.getSongsFull()) {
                     Admin.getSongs().remove(song);
                 }
-                // remove every song from that albume from every users likes songs
                 for (Song song : album.getSongsFull()) {
                     for (User user : Admin.getUsers()) {
                         user.getLikedSongs().remove(song);
@@ -140,7 +194,13 @@ public class Artist extends User {
         return getUsername() + " doesn't have an album with the given name.";
     }
 
-    public String removeEvent(String name) {
+    /**
+     * Remove a merch
+     *
+     * @param name name of the merch
+     * @return a message
+     */
+    public String removeEvent(final String name) {
         for (Event event : getEvents()) {
             if (event.getName().equals(name)) {
                 getEvents().remove(event);
@@ -148,5 +208,19 @@ public class Artist extends User {
             }
         }
         return getUsername() + " doesn't have an event with the given name.";
+    }
+
+    /**
+     * Get total likes
+     * @return total likes
+     */
+    public int getTotalNumberOfLikes() {
+        int totalLikes = 0;
+        for (Album a : getAlbums()) {
+            for (Song s : a.getSongsFull()) {
+                totalLikes += s.getLikes();
+            }
+        }
+        return totalLikes;
     }
 }

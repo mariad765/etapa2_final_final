@@ -1,105 +1,159 @@
 package fileio.input;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 
+@Getter
 public class FiltersInput {
     private String name;
     private String album;
     private ArrayList<String> tags;
     private String lyrics;
     private String genre;
-    private String releaseYear; // pentru search song/episode -> releaseYear
+    private String releaseYear;
     private String artist;
-    private String owner; // pentru search playlist si podcast
-    private String followers; // pentru search playlist -> followers
+    private String owner;
+    private String followers;
 
+    /**
+     * Constructor used for setting the fields of an FiltersInput object.
+     */
     public FiltersInput() {
     }
 
-    public String getName() {
-        return name;
-    }
+    /**
+     * Setter for name
+     *
+     * @param name the name of the song
+     */
+    public void setName(final String name) {
 
-    public void setName(String name) {
         this.name = name;
     }
 
-    public String getAlbum() {
-        return album;
-    }
+    /**
+     * Setter for album
+     *
+     * @param album the album of the song
+     */
+    public void setAlbum(final String album) {
 
-    public void setAlbum(String album) {
         this.album = album;
     }
 
-    public ArrayList<String> getTags() {
-        return tags;
-    }
+    /**
+     * Setter for tags
+     *
+     * @param tags the tags of the song
+     */
+    public void setTags(final ArrayList<String> tags) {
 
-    public void setTags(ArrayList<String> tags) {
         this.tags = tags;
     }
 
-    public String getLyrics() {
-        return lyrics;
-    }
+    /**
+     * Setter for lyrics
+     *
+     * @param lyrics the lyrics of the song
+     */
+    public void setLyrics(final String lyrics) {
 
-    public void setLyrics(String lyrics) {
         this.lyrics = lyrics;
     }
 
-    public String getGenre() {
-        return genre;
-    }
+    /**
+     * Setter for genre
+     *
+     * @param genre the genre of the song
+     */
+    public void setGenre(final String genre) {
 
-    public void setGenre(String genre) {
         this.genre = genre;
     }
 
-    public String getReleaseYear() {
-        return releaseYear;
-    }
+    /**
+     * Setter for releaseYear
+     */
+    public void setReleaseYear(final String releaseYear) {
 
-    public void setReleaseYear(String releaseYear) {
         this.releaseYear = releaseYear;
     }
 
-    public String getArtist() {
-        return artist;
-    }
+    /**
+     * Setter for artist
+     *
+     * @param artist the artist of the song
+     */
+    public void setArtist(final String artist) {
 
-    public void setArtist(String artist) {
         this.artist = artist;
     }
 
-    public String getOwner() {
-        return owner;
-    }
+    /**
+     * Setter for owner
+     *
+     * @param owner the owner of the song
+     */
+    public void setOwner(final String owner) {
 
-    public void setOwner(String owner) {
         this.owner = owner;
     }
 
-    public String getFollowers() {
-        return followers;
-    }
+    /**
+     * Setter for followers
+     *
+     * @param followers the followers of the song
+     */
+    public void setFollowers(final String followers) {
 
-    public void setFollowers(String followers) {
         this.followers = followers;
     }
 
+    /**
+     * Turn the object into a string
+     *
+     * @return the string
+     */
     @Override
     public String toString() {
-        return "FilterInput{" +
-                ", name='" + name + '\'' +
-                ", album='" + album + '\'' +
-                ", tags=" + tags +
-                ", lyrics='" + lyrics + '\'' +
-                ", genre='" + genre + '\'' +
-                ", releaseYear='" + releaseYear + '\'' +
-                ", artist='" + artist + '\'' +
-                ", owner='" + owner + '\'' +
-                ", followers='" + followers + '\'' +
+        return "FilterInput{"
+                +
+                ", name='"
+                + name
+                + '\''
+                +
+                ", album='"
+                + album
+                + '\''
+                +
+                ", tags="
+                + tags
+                +
+                ", lyrics='"
+                + lyrics
+                + '\''
+                +
+                ", genre='"
+                + genre
+                + '\''
+                +
+                ", releaseYear='"
+                + releaseYear
+                + '\''
+                +
+                ", artist='"
+                + artist
+                + '\''
+                +
+                ", owner='"
+                + owner
+                + '\''
+                +
+                ", followers='"
+                + followers
+                + '\''
+                +
                 '}';
     }
 }

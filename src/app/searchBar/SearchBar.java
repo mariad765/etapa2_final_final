@@ -29,17 +29,46 @@ public class SearchBar {
     @Getter
     private LibraryEntry lastSelected;
 
-    public SearchBar(String user) {
+    /**
+     * Constructor for SearchBar
+     * @param user user
+     */
+    public SearchBar(final String user) {
         this.results = new ArrayList<>();
         this.user = user;
     }
 
+    /**
+     * Clear selection
+     */
     public void clearSelection() {
         lastSelected = null;
         lastSearchType = null;
     }
 
-    public List<LibraryEntry> search(Filters filters, String type) {
+    /**
+     * Searches the library for entries based on specified
+     * filters and entry type.
+     * Supports searching for different types such as songs,
+     * playlists, podcasts, artists, hosts, and albums.
+     * The method applies filters to refine the search results
+     * according to the specified criteria.
+     *
+     * @param filters The Filters object containing criteria to
+     *                apply during the search process.
+     *                These criteria include name, album, tags,
+     *                lyrics, genre, release year, artist,
+     *                owner, followers, etc., based on the type
+     *                of entry being searched.
+     * @param type    The type of entries to search for (e.g.,
+     *                "song", "playlist", "podcast", "artist", "host", "album").
+     * @return A list of LibraryEntry objects that match the
+     * specified criteria and entry type.
+     *         The results are filtered based on the provided
+     *         criteria and limited to a maximum number of results.
+     */
+    public List<LibraryEntry> search(final Filters filters,
+                                     final String type) {
         List<LibraryEntry> entries;
 
         switch (type) {
@@ -67,7 +96,8 @@ public class SearchBar {
                 }
 
                 if (filters.getReleaseYear() != null) {
-                    entries = filterByReleaseYear(entries, filters.getReleaseYear());
+                    entries = filterByReleaseYear(entries,
+                            filters.getReleaseYear());
                 }
 
                 if (filters.getArtist() != null) {
@@ -89,7 +119,8 @@ public class SearchBar {
                 }
 
                 if (filters.getFollowers() != null) {
-                    entries = filterByFollowers(entries, filters.getFollowers());
+                    entries = filterByFollowers(entries,
+                            filters.getFollowers());
                 }
 
                 break;
@@ -146,7 +177,12 @@ public class SearchBar {
         return this.results;
     }
 
-    public LibraryEntry select(Integer itemNumber) {
+    /**
+     * Select
+     * @param itemNumber item number
+     * @return selected item
+     */
+    public LibraryEntry select(final Integer itemNumber) {
         if (this.results.size() < itemNumber) {
             results.clear();
 

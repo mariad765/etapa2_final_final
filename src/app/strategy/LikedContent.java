@@ -8,16 +8,29 @@ import app.user.User;
 import java.util.Collections;
 import java.util.List;
 
-public class LikedContent implements UserPage{
+public class LikedContent implements UserPage {
+    public static final int MAX_CH = 3;
     private List<Song> likedSongs;
     private List<Playlist> followedPlaylists;
     private String userN;
 
-    public LikedContent(List<Song> likedSongs, List<Playlist> followedPlaylists,String userN) {
+    /**
+     * Constructor for LikedContent
+     *
+     * @param likedSongs        liked songs
+     * @param followedPlaylists followed playlists
+     * @param userN             user name
+     */
+    public LikedContent(final List<Song> likedSongs, final List<Playlist> followedPlaylists,
+                        final String userN) {
         this.likedSongs = likedSongs;
         this.followedPlaylists = followedPlaylists;
         this.userN = userN;
     }
+
+    /**
+     * Display page
+     */
     @Override
     public String displayPage() {
         StringBuilder page = new StringBuilder("Liked songs:\n");
@@ -25,9 +38,23 @@ public class LikedContent implements UserPage{
         if (likedSongs.isEmpty()) {
             page.append("\t").append(Collections.emptyList()).append("\n");
         } else {
+            if (likedSongs.size() == 1) {
 
-            for (Song song : likedSongs) {
-                page.append("\t[").append(song.getName()).append(" - ").append(song.getArtist()).append("]\n");
+                page.append("\t[");
+                for (Song song : likedSongs) {
+                    page.append("").append(song.getName()).append(" - ").append(song.getArtist())
+                            .append("]\n");
+                }
+            }
+            if (likedSongs.size() > 1) {
+                page.append("\t[");
+                for (Song song : likedSongs) {
+                    page.append("").append(song.getName()).append(" - ").append(song.getArtist())
+                            .append(", ");
+                }
+                page.append("]\n");
+                page.deleteCharAt(page.length() - MAX_CH);
+                page.deleteCharAt(page.length() - MAX_CH);
             }
 
         }
@@ -35,18 +62,24 @@ public class LikedContent implements UserPage{
         page.append("\nFollowed playlists:\n");
 
         if (followedPlaylists.isEmpty()) {
-            page.append("\t").append(Collections.emptyList()).append("\n");
+            page.append("\t").append(Collections.emptyList()).append("");
         } else {
             for (Playlist playlist : followedPlaylists) {
-                page.append("\t").append(Collections.singletonList(playlist.getName() + " - " + playlist.getOwner())).append("");
+                page.append("\t").append(Collections.singletonList(
+                        playlist.getName() + " - " + playlist.getOwner())).append("");
             }
         }
 
         return page.toString();
     }
 
+    /**
+     * Update page
+     *
+     * @param userName user name
+     */
     @Override
-    public void updatePage(String userName) {
+    public void updatePage(final String userName) {
         User user = Admin.getUser(userName);
         assert user != null;
         this.likedSongs = user.getLikedSongs();
@@ -54,8 +87,15 @@ public class LikedContent implements UserPage{
 
     }
 
+    /**
+     * Get username
+     *
+     * @return user name
+     */
     @Override
     public String userName() {
         return null;
     }
+
 }
+
